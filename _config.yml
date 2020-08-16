@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jing REN"
+title                    : "" #"Jing Ren"
 title_separator          : "-"
 name                     : &name "Jing REN"
 description              : &description "personal description"

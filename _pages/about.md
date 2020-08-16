@@ -11,9 +11,7 @@ redirect_from:
 
 # About me
 
-I am currently a Ph.D candidate in [VCC](https://cemse.kaust.edu.sa/vcc), [KAUST](https://www.kaust.edu.sa/en), supervised by Prof. [Peter Wonka](http://peterwonka.net/). Before that, I obtained the MSc degree from [Oxford University](https://www.maths.ox.ac.uk/), UK, and BSc. degree from [Zhejiang University](https://www.zju.edu.cn/english/), China. 
-
-My research is mainly related to shape analysis and geometry processing. I am also interested in computer graphics and computer vision in general. Currently I am working on 
+I am currently a Ph.D candidate in [VCC](https://cemse.kaust.edu.sa/vcc), [KAUST](https://www.kaust.edu.sa/en), supervised by Prof. [Peter Wonka](http://peterwonka.net/). Before that, I obtained the MSc degree from [Oxford University](https://www.maths.ox.ac.uk/), UK, and the BSc. degree from [Zhejiang University](https://www.zju.edu.cn/english/), China.  My research is mainly related to shape analysis and geometry processing. I am also interested in computer graphics and computer vision in general. Currently I am working on shape matching with deep learning and shape reconstruction with optimization techiniques. 
 
 You can find my full CV [here](http://llorz.github.io/files/cv.pdf).
 
