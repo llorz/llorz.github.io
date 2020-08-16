@@ -7,11 +7,11 @@ author_profile: true
 
 
 <br>
-<b>[MOPO: Model-based Offline Policy Optimization](http://lantaoyu.com/publications/MOPO)</b> <br> 
-Tianhe Yu\*, Garrett Thomas\*, <b>Lantao Yu</b>, Stefano Ermon, James Zou, Sergey Levine, Chelsea Finn, Tengyu Ma.
-<i>ArXiv 2020</i>.
+<b>MapTree: Recovering Multiple Solutions in the Space of Maps</b> <br> 
+**Jing Ren**, Simone Melzi, Maks Ovsjanikov, Peter Wonka
+<i>ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2020</i>.
 
 <br>
-<b>[MOPO: Model-based Offline Policy Optimization](http://lantaoyu.com/publications/MOPO)</b> <br> 
-Tianhe Yu\*, Garrett Thomas\*, <b>Lantao Yu</b>, Stefano Ermon, James Zou, Sergey Levine, Chelsea Finn, Tengyu Ma.
-<i>ArXiv 2020</i>.
+<b>MapTree: Recovering Multiple Solutions in the Space of Maps</b> <br> 
+**Jing Ren**, Simone Melzi, Maks Ovsjanikov, Peter Wonka
+<i>ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2020</i>.
