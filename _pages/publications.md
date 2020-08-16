@@ -2,7 +2,7 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 
 {% if author.googlescholar %}
@@ -14,3 +14,12 @@ author_profile: true
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+
+This is a page not in the menu. You can use markdown in this page.
+
+Test1
+======
+
+Test2
+======
