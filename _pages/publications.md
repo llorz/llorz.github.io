@@ -34,11 +34,10 @@ ZoomOut: Spectral Upsampling for Efficient Shape Correspondence\
 Simone Melzi\*, <u>Jing Ren</u>\*, Emanuele Rodolà, Abhishek Sharma, Peter Wonka, and Maks Ovsjanikov\
 *ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2019*\
 [\[paper\]](https://www.dropbox.com/s/duhr5b426xb1q72/2019sga_zoomout.pdf?dl=0)
-[\[code\]](https://github.com/llorz/SGA19_zoomOut)    
+[\[code\]](https://github.com/llorz/SGA19_zoomOut)
 [\[slides\]](https://www.dropbox.com/s/yvi1b6npk4kqlas/SGA19_zoomOut_slides.pdf?dl=0) (\* equal contribution)
     
-
-
+    
 
 Structured Regularization of Functional Map Computations\
 <u>Jing Ren</u>, Mikhail Panine, Peter Wonka, and Maks Ovsjanikov\
