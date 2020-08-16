@@ -16,7 +16,7 @@ I am currently a Ph.D candidate in [VCC](https://cemse.kaust.edu.sa/vcc), [KAUST
 You can find my full CV [here](http://llorz.github.io/files/cv.pdf).
 
 
-# Publication
+# Publications
 
 **MapTree: Recovering Multiple Solutions in the Space of Maps**\
 <u>Jing Ren</u>, Simone Melzi, Maks Ovsjanikov, Peter Wonka\
