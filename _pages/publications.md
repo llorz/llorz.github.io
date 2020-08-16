@@ -7,8 +7,8 @@ author_profile: true
 
 
 
-MapTree: Recovering Multiple Solutions in the Space of Maps\
-<u>Jing Ren</u>, Simone Melzi, Maks Ovsjanikov, Peter Wonka\
+## MapTree: Recovering Multiple Solutions in the Space of Maps\
+### <u>Jing Ren</u>, Simone Melzi, Maks Ovsjanikov, Peter Wonka\
 *ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2020*\
 [\[paper\]](https://arxiv.org/abs/2006.02532)
 [\[code\]](https://github.com/llorz/SGA20_mapExplor)
@@ -63,4 +63,4 @@ Joint Graph Layouts for Visualizing Collections of Segmented Meshes\
 [\[code\]](https://github.com/llorz/TVCG17_JointMap_code)
 [\[slides\]](https://www.dropbox.com/s/l73hp1ty1o4nofz/SGP19_TVCG17_jointLayout.pdf?dl=0)
     
-    
+     
