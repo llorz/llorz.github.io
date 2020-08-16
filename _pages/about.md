@@ -11,14 +11,14 @@ redirect_from:
 
 # About me
 
-I am currently a Ph.D candidate in [VCC](https://cemse.kaust.edu.sa/vcc), [KAUST](https://www.kaust.edu.sa/en), supervised by Prof. [Peter Wonka](http://peterwonka.net/). Before that, I obtained the MSc degree from [Oxford University](https://www.maths.ox.ac.uk/), UK, and the BSc. degree from [Zhejiang University](https://www.zju.edu.cn/english/), China.  My research is mainly related to shape analysis and geometry processing. I am also interested in computer graphics and computer vision in general. Currently I am working on shape matching with deep learning and shape reconstruction with optimization techiniques. 
+I am currently a Ph.D candidate in [VCC](https://cemse.kaust.edu.sa/vcc), [KAUST](https://www.kaust.edu.sa/en), supervised by Prof. [Peter Wonka](http://peterwonka.net/). Before that, I obtained the MSc. degree from [Oxford University](https://www.maths.ox.ac.uk/), UK, and the BSc. degree from [Zhejiang University](https://www.zju.edu.cn/english/), China.  My research is mainly related to shape analysis and geometry processing. I am also interested in computer graphics and computer vision in general. Currently I am working on shape matching with deep learning and shape reconstruction with optimization techiniques. 
 
 You can find my full CV [here](http://llorz.github.io/files/cv.pdf).
 
 
 # Publication
 
-MapTree: Recovering Multiple Solutions in the Space of Maps\
+**MapTree: Recovering Multiple Solutions in the Space of Maps**\
 <u>Jing Ren</u>, Simone Melzi, Maks Ovsjanikov, Peter Wonka\
 *ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2020*\
 [\[paper\]](https://arxiv.org/abs/2006.02532)
@@ -26,14 +26,14 @@ MapTree: Recovering Multiple Solutions in the Space of Maps\
 
 
 
-MGCN: Descriptor Learning using Multiscale GCNs\
+**MGCN: Descriptor Learning using Multiscale GCNs**\
 Yiqun Wang, <u>Jing Ren</u>, Dong-Ming Yan, Jianwei Guo, Xiaopeng Zhang, Peter Wonka\
 *ACM Transactions on Graphics (Proc. SIGGRAPH), 2020*\
 [\[paper\]](https://arxiv.org/abs/2001.10472)
 [\[code\]](https://github.com/yiqun-wang/MGCN)
 
 
-Consistent ZoomOut: Efficient Spectral Map Synchronization\
+**Consistent ZoomOut: Efficient Spectral Map Synchronization**\
 Ruqi Huang, <u>Jing Ren</u>, Peter Wonka, Maks Ovsjanikov\
 *Computer Graphics Forum (Proc. SGP), 2020*\
 [\[paper\]](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14084)
@@ -41,7 +41,7 @@ Ruqi Huang, <u>Jing Ren</u>, Peter Wonka, Maks Ovsjanikov\
    
     
 
-ZoomOut: Spectral Upsampling for Efficient Shape Correspondence\
+**ZoomOut: Spectral Upsampling for Efficient Shape Correspondence**\
 Simone Melzi\*, <u>Jing Ren</u>\*, Emanuele Rodolà, Abhishek Sharma, Peter Wonka, and Maks Ovsjanikov\
 *ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2019*\
 [\[paper\]](https://www.dropbox.com/s/duhr5b426xb1q72/2019sga_zoomout.pdf?dl=0)
@@ -50,7 +50,7 @@ Simone Melzi\*, <u>Jing Ren</u>\*, Emanuele Rodolà, Abhishek Sharma, Peter Wonk
     
     
 
-Structured Regularization of Functional Map Computations\
+**Structured Regularization of Functional Map Computations**\
 <u>Jing Ren</u>, Mikhail Panine, Peter Wonka, and Maks Ovsjanikov\
 *Computer Graphics Forum (Proc. SGP), 2019*\
 [\[paper\]](https://www.dropbox.com/s/ctvor2e25eaaev6/2019SGP_Structured_Regularization_fMap.pdf?dl=0)
@@ -59,7 +59,7 @@ Structured Regularization of Functional Map Computations\
     
 
     
-Continuous and Orientation-preserving Correspondence via Functional Maps\
+**Continuous and Orientation-preserving Correspondence via Functional Maps**\
 <u> Jing Ren</u>, Adrien Poulenard, Peter Wonka, and Maks Ovsjanikov\
 *ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2018*\
 [\[paper\]](https://www.dropbox.com/s/j0r4x5yul5s76rw/2018SGA_orientation_BCICP.pdf?dl=0)
@@ -67,12 +67,10 @@ Continuous and Orientation-preserving Correspondence via Functional Maps\
 [\[slides\]](https://www.dropbox.com/s/uc7501d81vxbip5/SGA18_orientation_slides.pdf?dl=0)
     
     
-Joint Graph Layouts for Visualizing Collections of Segmented Meshes\
+**Joint Graph Layouts for Visualizing Collections of Segmented Meshes**\
 <u>Jing Ren</u>, Jens Schneider, Maks Ovsjanikov, and Peter Wonka\
 *IEEE Transactions on Visualization and Computer Graphics (TVCG), 2017*\
 [\[paper\]](https://ieeexplore.ieee.org/document/8031987/)
 [\[code\]](https://github.com/llorz/TVCG17_JointMap_code)
 [\[slides\]](https://www.dropbox.com/s/l73hp1ty1o4nofz/SGP19_TVCG17_jointLayout.pdf?dl=0)
-    
-# Education
-- 
+   
