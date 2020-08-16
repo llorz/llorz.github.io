@@ -2,7 +2,7 @@
 title: "MapTree: Recovering Multiple Solutions in the Space of Maps"
 collection: publications
 permalink: /publication/SGA20_MapTree
-date: 2020
+date: 2020-01-01
 venue: ACM Transactions on Graphics (Proc. SIGGRAPH Asia)
 paperurl: ''
 ---
