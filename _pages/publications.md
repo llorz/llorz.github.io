@@ -25,6 +25,7 @@ Yiqun Wang, <u>Jing Ren</u>, Dong-Ming Yan, Jianwei Guo, Xiaopeng Zhang, Peter W
 Consistent ZoomOut: Efficient Spectral Map Synchronization\
 Ruqi Huang, <u>Jing Ren</u>, Peter Wonka, Maks Ovsjanikov\
 *Computer Graphics Forum (Proc. SGP), 2020*\
+[\[paper\]](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14084)
 [\[code\]](https://github.com/ruqihuang/SGP2020_ConsistentZoomOut)
    
     
@@ -36,6 +37,9 @@ Simone Melzi\*, <u>Jing Ren</u>\*, Emanuele Rodolà, Abhishek Sharma, Peter Wonk
 [\[code\]](https://github.com/llorz/SGA19_zoomOut)    
 [\[slides\]](https://www.dropbox.com/s/yvi1b6npk4kqlas/SGA19_zoomOut_slides.pdf?dl=0) (\* equal contribution)
     
+
+
+
 Structured Regularization of Functional Map Computations\
 <u>Jing Ren</u>, Mikhail Panine, Peter Wonka, and Maks Ovsjanikov\
 *Computer Graphics Forum (Proc. SGP), 2019*\
