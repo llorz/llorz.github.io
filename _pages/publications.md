@@ -24,14 +24,14 @@ Yiqun Wang, <u>Jing Ren</u>, Dong-Ming Yan, Jianwei Guo, Xiaopeng Zhang, Peter W
 
 Consistent ZoomOut: Efficient Spectral Map Synchronization\
 Ruqi Huang, <u>Jing Ren</u>, Peter Wonka, Maks Ovsjanikov\
-Computer Graphics Forum (Proc. SGP), 2020\
+*Computer Graphics Forum (Proc. SGP), 2020*\
 [\[code\]](https://github.com/ruqihuang/SGP2020_ConsistentZoomOut)
    
     
 
 ZoomOut: Spectral Upsampling for Efficient Shape Correspondence\
 Simone Melzi\*, <u>Jing Ren</u>\*, Emanuele Rodolà, Abhishek Sharma, Peter Wonka, and Maks Ovsjanikov\
-*ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2019*\ 
+*ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2019*\
 [\[paper\]](https://www.dropbox.com/s/duhr5b426xb1q72/2019sga_zoomout.pdf?dl=0)
 [\[code\]](https://github.com/llorz/SGA19_zoomOut)    
 [\[slides\]](https://www.dropbox.com/s/yvi1b6npk4kqlas/SGA19_zoomOut_slides.pdf?dl=0) (\* equal contribution)
@@ -40,7 +40,7 @@ Structured Regularization of Functional Map Computations\
 <u>Jing Ren</u>, Mikhail Panine, Peter Wonka, and Maks Ovsjanikov\
 *Computer Graphics Forum (Proc. SGP), 2019*\
 [\[paper\]](https://www.dropbox.com/s/ctvor2e25eaaev6/2019SGP_Structured_Regularization_fMap.pdf?dl=0)
-[\[code\]](https://github.com/llorz/SGP19_complex_resolvent_laplacian)    
+[\[code\]](https://github.com/llorz/SGP19_complex_resolvent_laplacian)
 [\[slides\]](https://www.dropbox.com/s/ah8if4wywfr98su/SGP19_complex_resolvent_laplacian.pdf?dl=0)
     
 
