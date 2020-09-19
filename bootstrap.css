@@ -6870,3 +6870,7 @@ a.list-group-item-danger.active:focus {
 .left_paper {
   width: 30%;
 }
+
+.img-circle {
+    border-radius: 50%;
+}
