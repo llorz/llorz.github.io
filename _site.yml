@@ -1,0 +1,14 @@
+name: "REN Jing"
+output_dir: "."
+navbar:
+  title: "REN Jing"
+  left:
+    
+  right:
+    - icon: fa-github fa-lg
+      href: http://github.com/llorz
+output:
+  html_document:
+    theme: cosmo
+    highlight: monochrome
+    css: 'bootstrap.css'
