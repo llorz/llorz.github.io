@@ -256,6 +256,7 @@ align="center">
 
 # Research Internship
 <hr style="margin-top:-8px; border-width: 1px">
+
 <div class="row">
   <div class="column2" style="column-gap:10px">
   <p><img src="images/ali_logo.jpg" style="height:55px; margin-right:-5px" align="left">
