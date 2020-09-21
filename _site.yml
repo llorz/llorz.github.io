@@ -1,9 +1,11 @@
-name: "REN Jing"
+title: "REN Jing"
+author: "REN Jing"
+date: "`r Sys.Date()`"
+
 output_dir: "."
+
 navbar:
   title: "REN Jing"
-  left:
-    
   right:
     - icon: fa-github fa-lg
       href: http://github.com/llorz
@@ -12,4 +14,4 @@ output:
     theme: cosmo
     highlight: monochrome
     css: 'bootstrap.css'
-  title: :REN Jing
+  
