@@ -1,10 +1,12 @@
+<link rel="stylesheet" href="bootstrap.css">
+
 ---
+pagetitle: REN Jing
 ---
 
-<link rel="stylesheet" href="bootstrap.css" type="text/css">
-
-# About me 
+# About me
 <hr style="margin-top:-8px; border-width: 1px">
+
 
 <div class="row">
 <div class="column_paper" style="column-gap:40px">
