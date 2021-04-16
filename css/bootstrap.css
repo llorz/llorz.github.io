@@ -1267,15 +1267,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 39px;
+  font-size: 30px;
+  font-family: optima;
 }
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 30px;
 }
 h3,
 .h3 {
+  text-align:left;
+  color:#2780E3;
   font-size: 26px;
+  font-family: optima;
 }
 h4,
 .h4 {
@@ -6837,9 +6841,9 @@ a.list-group-item-danger.active:focus {
 
 .column {
   float: left;
-  margin-left: 10px;
-  margin-right: 20px;
-  width: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 20%;
 }
 
 .column2 {
@@ -6848,6 +6852,14 @@ a.list-group-item-danger.active:focus {
   margin-right: 0px;
   width: 50%;
 }
+
+.column3 {
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 30%;
+}
+
 
 .row:after {
   content: "";
@@ -6874,3 +6886,5 @@ a.list-group-item-danger.active:focus {
 .img-circle {
     border-radius: 50%;
 }
+
+span.optima{font-family:optima, Sans-serif}

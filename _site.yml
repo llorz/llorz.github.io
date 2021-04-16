@@ -6,12 +6,19 @@ output_dir: "."
 
 navbar:
   title: "REN Jing"
+  left:
+    - text: Home
+      href: "#home"
+    - text: Publications
+      href: "#pub"
   right:
-    - icon: fa-github fa-lg
+    - icon: ai-google-scholar ai-lg
+      href: https://scholar.google.com/citations?user=qkadBVcAAAAJ&hl=en
+    - icon: fab fa-github fa-lg
       href: http://github.com/llorz
 output:
   html_document:
-    theme: cosmo
+    theme: simplex
     highlight: monochrome
     css: 'bootstrap.css'
   
