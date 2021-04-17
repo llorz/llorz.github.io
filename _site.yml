@@ -1,8 +1,10 @@
+---
 title: "REN Jing"
 author: "REN Jing"
 date: "`r Sys.Date()`"
-
 output_dir: "."
+---
+
 
 navbar:
   title: "REN Jing"
@@ -18,7 +20,9 @@ navbar:
       href: http://github.com/llorz
 output:
   html_document:
+    includes:
+      in_header: "favicon.html"
     theme: simplex
     highlight: monochrome
     css: 'bootstrap.css'
-  
+    
