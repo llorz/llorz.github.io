@@ -444,6 +444,7 @@ Supervised by Prof. [Maks Ovsjanikov][maks]
 
 </div>
 
+
 [peter]: http://peterwonka.net/
 [maks]: http://www.lix.polytechnique.fr/~maks/
 [simone]: https://sites.google.com/site/melzismn/
@@ -464,8 +465,20 @@ Supervised by Prof. [Maks Ovsjanikov][maks]
 [hjq]: https://scholar.google.com.hk/citations?user=UqAybqgAAAAJ&hl=en
 [gowtham]: https://www.researchgate.net/profile/Harihara-Gowtham
 
-```{css, echo=FALSE}
 
+```{css toc-content, echo = FALSE}
+#TOC {
+  left: 50px;
+  width: 200px;
+  margin: 20px 0px 0px 0px;
+}
+
+.main-container {
+    margin-left: 20px;
+}
+```
+
+```{css, echo=FALSE}
 .column {
   float: left;
   margin-left: 0px;
