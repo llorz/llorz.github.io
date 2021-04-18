@@ -7,8 +7,6 @@ output_dir: "."
 navbar:
   title: "REN Jing"
   left:
-    - text: Home
-      href: "#home"
     - text: Publications
       href: "#pub"
   right:
