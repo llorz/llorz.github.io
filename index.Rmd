@@ -107,9 +107,9 @@ height="70px" width="auto">
 *Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021*
 </span><br>
 <span>
-[<i class="fas fa-file-pdf"></i> paper]()&nbsp;
-[<i class="fas fa-file-pdf"></i> suppl.]()&nbsp;
-[<i class="fas fa-code"></i> code](https://github.com/paigautam/CVPR21_fatSinkhornFilters)
+[<i class="fas fa-file-pdf"></i> paper](https://hal.archives-ouvertes.fr/hal-03184936/document)&nbsp;
+[<i class="fas fa-file-pdf"></i> suppl.](https://hal.archives-ouvertes.fr/hal-03184936/file/10374-supp.pdf)&nbsp;
+[<i class="fas fa-code"></i> code](https://github.com/paigautam/CVPR21_FastSinkhornFilters)
 </span><br>
 </p>
 </div>
