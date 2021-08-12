@@ -9,7 +9,7 @@ pagetitle: "REN Jing"
 <div class="row">
 <div class="column_info" style="column-gap:5px">
 <span>
-I am currently a Ph.D candidate in [VCC](https://cemse.kaust.edu.sa/vcc), [KAUST](https://www.kaust.edu.sa/en), supervised by Prof. [Peter Wonka][peter]. Before that, I obtained the MSc. degree from [Oxford University](https://www.maths.ox.ac.uk/), UK, and the BSc. degree from [Zhejiang University](https://www.zju.edu.cn/english/), China.  My research is mainly related to shape analysis and geometry processing. I am also interested in computer graphics and computer vision in general. Currently I am working on shape matching with deep learning and shape reconstruction with optimization techniques. 
+I am currently a Ph.D candidate in [VCC](https://cemse.kaust.edu.sa/vcc), [KAUST](https://www.kaust.edu.sa/en), supervised by Prof. [Peter Wonka][peter] and Prof. [Maks Ovsjanikov][maks]. Before that, I obtained the MSc. degree from [Oxford University](https://www.maths.ox.ac.uk/), UK, and the BSc. degree from [Zhejiang University](https://www.zju.edu.cn/english/), China.  My research is mainly related to shape analysis and geometry processing. I am also interested in computer graphics and computer vision in general. Currently I am working on shape matching with deep learning and shape reconstruction with optimization techniques. 
 </span>
 
 <span>
@@ -48,27 +48,7 @@ height="100px" width="auto" align="center"></p>
 <hr width="60px" align="right" style="margin-top:-5px; border-width: 1px; margin-bottom:-3px" >
 
 
-<div class="row">
-<div class="column_paper" style="column-gap:20px">
-<figure>
-<p><img src="images/kaust_logo.jpg" 
-height="70px" width="auto">
-</figure>
-<span>
-**Shape Matching and Map Space Exploration via Functional Maps**
-</span><br>
-<span>
-<u>Jing Ren</u>
-</span><br>
-<span>
-*PhD Thesis, 2021*
-</span><br>
-<span>
-[<i class="fas fa-file-pdf"></i> paper]()
-</span><br>
-</p>
-</div>
-</div>
+
 
 <div class="row">
 <div class="column_paper" style="column-gap:20px">
@@ -98,6 +78,57 @@ height="70px" width="auto">
 <div class="row">
 <div class="column_paper" style="column-gap:20px">
 <span class="optima">
+**Shape Matching and Map Space Exploration via Functional Maps**
+</span><br>
+<span>
+<u>Jing Ren</u>
+</span><br>
+<span>
+*PhD Thesis, 2021*
+</span><br>
+<span>
+[<i class="fas fa-file-pdf"></i> paper](https://repository.kaust.edu.sa/handle/10754/670353)
+</span><br>
+</p>
+</div>
+<figure>
+<p><img src="images/kaust_logo.jpg" 
+height="70px" width="auto"
+align="right">
+</figure>
+</div>
+
+
+<div class="row">
+<div class="column_paper" style="column-gap:20px">
+<span class="optima">
+**Discrete Optimization for Shape Matching**
+</span><br>
+<span>
+<u>Jing Ren</u>, [Simone Melzi][simone], [Peter Wonka][peter], [Maks Ovsjanikov][maks]
+</span><br>
+<span>
+*Computer Graphics Forum (Proc. SGP), 2021*
+</span><br>
+<span>
+[<i class="fas fa-file-pdf"></i> paper](http://www.lix.polytechnique.fr/~maks/papers/SGP21_DiscMapOpt.pdf)&nbsp;
+[<i class="fas fa-file-pdf"></i> suppl.](http://www.lix.polytechnique.fr/~maks/papers/SGP21_DiscMapOpt_SupMat.pdf)&nbsp;
+[<i class="fas fa-code"></i> code](https://github.com/llorz/SGP21_discreteOptimization)&nbsp;
+[<i class="fas fa-video"></i> presentation](https://youtu.be/YEjfnbhKaBI)
+</span><br>
+</p>
+</div>
+<figure>
+<p><img src="images/paper_sgp21_discreteOpti.png" 
+height="80px" width="auto"
+align="right">
+</figure>
+</div>
+
+
+<div class="row">
+<div class="column_paper" style="column-gap:20px">
+<span class="optima">
 **Fast Sinkhorn Filters: Using Matrix Scaling for Non-Rigid Shape Correspondence with Functional Maps**
 </span><br>
 <span>
@@ -109,7 +140,9 @@ height="70px" width="auto">
 <span>
 [<i class="fas fa-file-pdf"></i> paper](https://hal.archives-ouvertes.fr/hal-03184936/document)&nbsp;
 [<i class="fas fa-file-pdf"></i> suppl.](https://hal.archives-ouvertes.fr/hal-03184936/file/10374-supp.pdf)&nbsp;
-[<i class="fas fa-code"></i> code](https://github.com/paigautam/CVPR21_FastSinkhornFilters)
+[<i class="fas fa-code"></i> code](https://github.com/paigautam/CVPR21_FastSinkhornFilters)&nbsp;
+[<i class="fas fa-file-pdf"></i> poster](https://drive.google.com/file/d/1hX06R5IvoRICebYkLg7s4hv04X5npBXJ/view)&nbsp;
+[<i class="fas fa-video"></i> presentation](https://www.youtube.com/watch?v=nI7-mpibgus&ab_channel=GautamPai)
 </span><br>
 </p>
 </div>
