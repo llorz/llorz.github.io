@@ -20,6 +20,6 @@ output:
     toc: true
     toc_float: true
     toc_collapsed: true
-    theme: flatly
+    theme: cosmo
     includes:
       in_header: favicon.html
