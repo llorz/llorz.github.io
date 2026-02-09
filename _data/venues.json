@@ -1,0 +1,21 @@
+{
+  "venues": {
+    "SGA": "ACM Transactions on Graphics (Proc. SIGGRAPH Asia)",
+    "SIG": "ACM Transactions on Graphics (Proc. SIGGRAPH)",
+    "SGAconf": "SIGGRAPH Asia",
+    "SIGconf": "SIGGRAPH",
+    "TOG": "ACM Transactions on Graphics",
+
+    "ICCV": "International Conference on Computer Vision",
+    "EG": "Eurographics",
+    "3DV": "International Conference on 3D Vision",
+    "BMVC": "British Machine Vision Conference",
+    "ECCV": "European Conference on Computer Vision",
+    "SGP": "Computer Graphics Forum (Proc. Symposium on Geometry Processing)",
+    "CGF": "Computer Graphics Forum",
+    "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition",
+    "ANTHRO": "L'Anthropologie",
+    "TVCG": "IEEE Transactions on Visualization and Computer Graphics",
+    "THESIS": "PhD Thesis"
+  }
+}

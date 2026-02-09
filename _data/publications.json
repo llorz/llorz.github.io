@@ -1,0 +1,319 @@
+{
+  "publications": [
+    {
+      "id": "25_SGAconf_kirigami",
+      "title": "Reconfigurable Hinged Kirigami Tessellations",
+      "authors": ["Aviv", "Jing", "Marcel", "Olga"],
+      "equal_contribution": ["Aviv", "Jing"],
+      "note": "(* equal contribution)",
+      "resources": ["paper", "poster", "slides"],
+      "image_extensions": [".jpg"],
+      "links": {
+        "project": "https://igl.ethz.ch/projects/kirigami/",
+        "demo": "https://segaviv.github.io/kirigami_tessellations",
+        "video": "https://youtu.be/DyvxWxhdnbg",
+        "code": "https://github.com/segaviv/kirigami_tessellations"
+      }
+    },
+
+    {
+      "id": "25_ICCV_geodist",
+      "title": "Geometry Distributions",
+      "authors": ["Biao", "Jing", "Peter"],
+      "resources": ["paper", "poster"],
+      "image_extensions": [".jpg"],
+      "links": {
+        "project": "https://1zb.github.io/GeomDist/",
+        "arxiv": "https://arxiv.org/abs/2411.16076",
+        "code": "https://github.com/1zb/GeomDist"
+      }
+    },
+
+    {
+      "id": "25_SIGconf_gothic",
+      "title": "Computational Modeling of Gothic Microarchitecture",
+      "authors": ["Aviv", "Jing", "Martin", "Olga"],
+      "resources": ["paper", "poster", "slides"],
+      "image_extensions": [".jpg"],
+      "links": {
+        "project": "https://igl.ethz.ch/projects/gothic/",
+        "demo": "https://ren-jing.com/SIG25_goldschmiedrisse/",
+        "video": "https://youtu.be/hNhnC6d3hAY",
+        "code": "https://github.com/llorz/SIG25_goldschmiedrisse"
+      }
+    },
+
+    {
+      "id": "24_SGA_chebyParam",
+      "title": "Chebyshev Parameterization for Woven Fabric Modeling",
+      "authors": ["Annika", "Aviv", "Jing", "Olga"],
+      "equal_contribution": ["Annika", "Aviv"],
+      "note": "(* equal contribution)",
+      "resources": ["paper"],
+      "image_extensions": [".gif"],
+      "links": {
+        "project": "https://igl.ethz.ch/projects/chebyshev/",
+        "video": "https://www.youtube.com/watch?v=lhTshybwd64",
+        "code": "https://github.com/oehria/woven-fabric-chebyshev"
+      }
+    },
+
+    {
+      "id": "24_SIG_3dSmocking",
+      "title": "Fabric Tessellation: Realizing Freeform Surfaces by Smocking",
+      "authors": ["Aviv", "Jing", "Amir", "Olga"],
+      "resources": ["paper", "slides", "poster"],
+      "image_extensions": [".jpg"],
+      "links": {
+        "project": "https://igl.ethz.ch/projects/3dsmocking/",
+        "demo": "https://segaviv.github.io/smock_comparison/",
+        "video": "https://igl.ethz.ch/projects/3dsmocking/3dsmocking_suppl_video.mp4",
+        "code": "https://github.com/segaviv/SmockingTessellations"
+      },
+      "awards": [
+        {
+          "name": "Best Paper Honorable Mention",
+          "link": "https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"
+        }
+      ]
+    },
+
+    {
+      "id": "24_EG_italianSmocking",
+      "title": "Computational Smocking through Fabric-Thread Interaction",
+      "authors": ["Ningfeng", "Jing", "Olga"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".jpg"],
+      "links": {
+        "project": "https://igl.ethz.ch/projects/italiansmocking/",
+        "video": "https://www.youtube.com/watch?reload=9&v=L6AdmSCmbFc&feature=youtu.be",
+        "code": "https://github.com/nifzhou/ItalianSmocking"
+      }
+    },
+
+    {
+      "id": "24_TOG_smockingDesign",
+      "title": "Digital 3D Smocking Design",
+      "authors": ["Jing", "Aviv", "Olga"],
+      "note": "(presented in SIGGRAPH Asia 2023)",
+      "resources": ["paper", "slides", "poster"],
+      "image_extensions": [".jpg"], 
+      "links": {
+        "project": "https://igl.ethz.ch/projects/smockingdesign/",
+        "demo": "https://segaviv.github.io/smock_web/",
+        "video": "https://youtu.be/GNWhDYsAXiM",
+        "code": "https://github.com/llorz/SmockingDesign",
+        "suppl": "https://youtu.be/vjnmbmO3zcg"
+      }
+    },
+
+    {
+      "id": "22_3DV_smooth",
+      "title": "Smooth Non-Rigid Shape Matching via Effective Dirichlet Energy Optimization",
+      "authors": ["Robin", "Jing", "Olga", "Maks"],
+      "resources": ["paper"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "http://www.lix.polytechnique.fr/Labo/Robin.Magnet/3DV2022_smooth_corres/smooth_corres_main.pdf",
+        "code": "https://github.com/RobinMagnet/smoothFM",
+        "dataset": "https://github.com/llorz/3DV22_DeformingThings4DMatching_dataset",
+        "presentation": "https://www.youtube.com/watch?v=ipWwZjEKjRI"
+      },
+      "awards": [
+        {
+          "name": "Best Paper Award",
+          "link": "https://3dvconf.github.io/2022/prizes/"
+        }
+      ]
+    },
+
+    {
+      "id": "22_BMVC_wireframe",
+      "title": "Learning to Construct 3D Building Wireframes from 3D Line Clouds",
+      "authors": ["Yicheng", "Jing", "Xuefei", "Di", "Yajing", "Peter", "Linchao"],
+      "resources": ["paper", "poster"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2208.11948",
+        "suppl": "https://ren-jing.com/files/22_BMVC_wireframe_suppl.pdf",
+        "code": "https://github.com/Luo1Cheng/LC2WF",
+        "presentation": "https://youtu.be/WVIPVl3Hu_M"
+      }
+    },
+
+    {
+      "id": "22_SGA_gbn",
+      "title": "Gaussian Blue Noise",
+      "authors": ["Abdalla", "Jing", "Peter"],
+      "resources": [],
+      "image_extensions": [".png"],
+      "links": {
+        "project": "https://abdallagafar.com/publications/gbn/",
+        "arxiv": "https://arxiv.org/abs/2206.07798v1"
+      }
+    },
+
+    {
+      "id": "22_ECCV_realy",
+      "title": "REALY: Rethinking the Evaluation of 3D Face Reconstruction",
+      "authors": ["Zenghao", "Haoxian", "Jing", "Di", "Zhengzhuo", "Xuefei", "Chun", "Linchao"],
+      "equal_contribution": ["Zenghao", "Haoxian"],
+      "note": "(* equal contribution)",
+      "resources": [],
+      "image_extensions": [".png"],
+      "links": {
+        "project": "https://www.realy3dface.com/",
+        "arxiv": "https://arxiv.org/abs/2203.09729",
+        "code": "https://github.com/czh-98/REALY"
+      }
+    },
+
+    {
+      "id": "21_SGA_roofModeling",
+      "title": "Intuitive and Efficient Roof Modeling for Reconstruction and Synthesis",
+      "authors": ["Jing", "Biao", "Bojian", "Jianqiang", "Lubin", "Maks", "Peter"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2109.07683",
+        "code": "https://github.com/llorz/SGA21_roofOptimization",
+        "suppl": "https://www.youtube.com/watch?v=MmyNTmV7lFM",
+        "presentation": "https://www.youtube.com/watch?v=1aVX-eF-1N0"
+      }
+    },
+
+    {
+      "id": "21_SGP_discreteOpt",
+      "title": "Discrete Optimization for Shape Matching",
+      "authors": ["Jing", "Simone", "Peter", "Maks"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "suppl": "http://www.lix.polytechnique.fr/~maks/papers/SGP21_DiscMapOpt_SupMat.pdf",
+        "code": "https://github.com/llorz/SGP21_discreteOptimization",
+        "presentation": "https://www.youtube.com/watch?v=_PAR-4WHOic"
+      }
+    },
+
+    {
+      "id": "21_CVPR_sinkhorn",
+      "title": "Fast Sinkhorn Filters: Using Matrix Scaling for Non-Rigid Shape Correspondence with Functional Maps",
+      "authors": ["Gautam", "Jing", "Simone", "Peter", "Maks"],
+      "resources": ["paper", "poster"],
+      "image_extensions": [".png"],
+      "links": {
+        "suppl": "https://hal.archives-ouvertes.fr/hal-03184936/file/10374-supp.pdf",
+        "code": "https://github.com/paigautam/CVPR21_FastSinkhornFilters",
+        "presentation": "https://www.youtube.com/watch?v=nI7-mpibgus"
+      }
+    },
+
+    {
+      "id": "20_ANTHRO_jaws",
+      "title": "Geometric analysis of shape variability of lower jaws of prehistoric humans",
+      "authors": ["Jing", "Peter", "Gowtham", "Maks"],
+      "resources": ["paper"],
+      "image_extensions": [".png"],
+      "links": {
+        "official": "https://www.sciencedirect.com/science/article/pii/S0003552120301035",
+        "arxiv": "http://llorz.github.io/files/paper_20_jaws.pdf",
+        "code": "https://github.com/llorz/PROJ2020_jaws"
+      }
+    },
+
+    {
+      "id": "20_SGA_mapTree",
+      "title": "MapTree: Recovering Multiple Solutions in the Space of Maps",
+      "authors": ["Jing", "Simone", "Maks", "Peter"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2006.02532",
+        "code": "https://github.com/llorz/SGA20_mapExplor",
+        "presentation": "https://www.youtube.com/watch?v=MSStZh4Houk"
+      }
+    },
+
+    {
+      "id": "20_SIG_mgcn",
+      "title": "MGCN: Descriptor Learning using Multiscale GCNs",
+      "authors": ["Yiqun", "Jing", "Dongming", "Jianwei", "Xiaopeng", "Peter"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2001.10472",
+        "code": "https://github.com/yiqun-wang/MGCN"
+      }
+    },
+
+    {
+      "id": "20_SGP_czo",
+      "title": "Consistent ZoomOut: Efficient Spectral Map Synchronization",
+      "authors": ["Ruqi", "Jing", "Peter", "Maks"],
+      "resources": ["paper"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14084",
+        "code": "https://github.com/ruqihuang/SGP2020_ConsistentZoomOut",
+        "presentation": "https://www.youtube.com/watch?v=WhduuY9o8QQ&t=24s&ab_channel=RuqiHuang"
+      }
+    },
+
+    {
+      "id": "19_SGA_zoomOut",
+      "title": "ZoomOut: Spectral Upsampling for Efficient Shape Correspondence",
+      "authors": ["Simone", "Jing", "Emanuele", "Abhishek", "Peter", "Maks"],
+      "equal_contribution": ["Simone", "Jing"],
+      "note": "(* equal contribution)",
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://arxiv.org/abs/1904.07865",
+        "code": "https://github.com/llorz/SGA19_zoomOut"
+      }
+    },
+
+    {
+      "id": "19_SGP_structured",
+      "title": "Structured Regularization of Functional Map Computations",
+      "authors": ["Jing", "Mikhail", "Peter", "Maks"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://ren-jing.com/files/paper_19_SGP_structured.pdf",
+        "code": "https://github.com/llorz/SGP19_complex_resolvent_laplacian"
+      },
+      "awards": [
+        {
+          "name": "Best Paper Honorable Mention",
+          "link": "https://sgp2019.di.unimi.it/awards.html"
+        }
+      ]
+    },
+
+    {
+      "id": "18_SGA_bcicp",
+      "title": "Continuous and Orientation-preserving Correspondence via Functional Maps",
+      "authors": ["Jing", "Adrien", "Peter", "Maks"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://ren-jing.com/files/paper_18_SGA_bcicp.pdf",
+        "code": "https://github.com/llorz/SGA18_orientation_BCICP_code"
+      }
+    },
+
+    {
+      "id": "17_TVCG_graph",
+      "title": "Joint Graph Layouts for Visualizing Collections of Segmented Meshes",
+      "authors": ["Jing", "Jens", "Maks", "Peter"],
+      "resources": ["paper", "slides"],
+      "image_extensions": [".png"],
+      "links": {
+        "arxiv": "https://ieeexplore.ieee.org/document/8031987/",
+        "code": "https://github.com/llorz/TVCG17_JointMap_code",
+        "video": "https://www.youtube.com/watch?v=Z-mr97gtMcM&ab_channel=PeterWonkaResearch"
+      }
+    }
+  ]
+}

@@ -1,1325 +1,282 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
-<title>REN Jing</title>
-
-<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
-<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-<link rel="manifest" href="favicon_io/site.webmanifest">
-<link rel="stylesheet" href="css/academicons.min.css"/>
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
-
-
-
-
-
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jing Ren - Personal Website</title>
+    
+    <!-- Favicon - from root favicon_io folder -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v4-shims.min.css">
+    
+    <!-- Academicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- CSS Files - from src/css (same directory as index.html) -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#2880e3">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jing Ren - Personal Website">
+    <meta property="og:description" content="Senior Researcher at Interactive Geometry Lab, ETH Zurich">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ren-jing.com">
+    <meta property="og:image" content="/images/profile_from_abdalla_gbn.jpg">
 </head>
-
 <body>
-
-
-<div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">REN Jing</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="#pub">Publications</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://scholar.google.com/citations?user=qkadBVcAAAAJ&amp;hl=en">
-    <span class="ai ai-google-scholar ai-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="http://github.com/llorz">
-    <span class="fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div id="header">
-
-
-
-
-</div>
-
-
-<div class="row">
-<h1 class="optima" id="home">
-<p>About me</p>
-</h1>
-</div>
-<div class="row">
-<div class="column_info" style="column-gap:5px">
-<p>I am currently a senior researcher in <a
-href="https://igl.ethz.ch/">Interactive Geometry Lab</a>, <a
-href="https://ethz.ch/en.html">ETH Zurich</a>, advised by Prof. <a
-href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>. I
-obtained my Ph.D degree in 2021 from <a
-href="https://cemse.kaust.edu.sa/vcc">VCC</a>, <a
-href="https://www.kaust.edu.sa/en">KAUST</a>, supervised by Prof. <a
-href="http://peterwonka.net/">Peter Wonka</a> and Prof. <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a>.
-Before that, I obtained the MSc. degree from <a
-href="https://www.maths.ox.ac.uk/">Oxford University</a>, UK, and the
-BSc. degree from <a href="https://www.zju.edu.cn/english/">Zhejiang
-University</a>, China. My research is mainly related to shape analysis,
-geometry processing and digital fabrication. I am also interested in
-computer graphics and computer vision in general.</p>
-<p>You can find my full CV <a
-href="http://llorz.github.io/files/cv.pdf">here</a>.</p>
-</div>
-<figure>
-<p>
-<p><img src="images/profile_from_abdalla_gbn.jpg" class="img-circle" height="120px" width="auto" align="center"/></p>
-</p>
-</figure>
-</div>
-<div class="row">
-<h1 class="optima" id="pub">
-<p>Publications
-<!---<a href="https://orcid.org/0000-0003-3114-3517" style="color: #b2c046;font-size:22px"><i class="ai ai-orcid ai-lg"></i></a>&nbsp;<a href="https://arxiv.org/a/ren_j_2.html" style="color: #b31b1b; font-size:22px"><i class="ai ai-arxiv ai-lg"></i></a>&nbsp;<a href="https://scholar.google.com/citations?user=qkadBVcAAAAJ&hl=en" style="color: gray; font-size:22px"><i class="ai ai-google-scholar ai-lg"></i></a>&nbsp;<a href="https://github.com/llorz" style="color:#A34DAD; font-size:22px"><i class="fab fa-github fa-lg"></i></a> 
----></p>
-</h1>
-</div>
-<div class="row" style="margin-top:-5px">
-<p>Jump to year: <a href="#2025" style="font-family:optima">2025</a>,
-<a href="#2024" style="font-family:optima">2024</a>,
-<a href="#2023" style="font-family:optima">2023</a>,
-<a href="#2022" style="font-family:optima">2022</a>, 
-<a href="#2021" style="font-family:optima">2021</a>, 
-<a href="#2020" style="font-family:optima">2020</a>, 
-<a href="#2019" style="font-family:optima">2019</a>, 
-<a href="#2018" style="font-family:optima">2018</a>, 
-<a href="#2017" style="font-family:optima">2017</a>.</p>
-</div>
-<!---
-<div class="row">
-<div class="column_paper" style="column-gap:20px">
-<span class="optima">
-**paper title**
-</span><br>
-<span>
-author list
-</span><br>
-<span>
-*conference name*
-</span><br>
-<span>
-[<i class="fas fa-file-pdf"></i> paper]()&nbsp;
-[<i class="fas fa-code"></i> code]()&nbsp;
-[<i class="fas fa-video"></i> suppl.]()&nbsp;
-[<i class="fas fa-video"></i> poster]()&nbsp;
-[<i class="fas fa-video"></i> presentation]()
-</span><br>
-</p>
-</div>
-<figure>
-<p><img src="images/paper_test.png" 
-height="100px" width="auto"
-align="right">
-</figure>
-</div>
---->
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2025">
-<p>2025</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Reconfigurable Hinged Kirigami
-Tessellations</strong></span> <br><a
-href="https://segaviv.github.io/">Aviv Segall*</a>, <u>Jing Ren*</u>, <a
-href="https://marcelpadilla.com/">Marcel Padilla</a>, <a
-href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> <br>
-<em>SIGGRAPH Asia, 2025</em>  (* equal contribution)<br> <a
-href="https://igl.ethz.ch/projects/kirigami/"><i class="fas fa-globe"></i>
-project page</a>  <a
-href="https://segaviv.github.io/kirigami_tessellations"><i class="fas fa-laptop"></i>
-web demo</a>  <a
-href="http://llorz.github.io/files/paper_25_SGA_kirigami.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://youtu.be/DyvxWxhdnbg"><i class="fas fa-video"></i>
-video</a> <a
-href="https://github.com/segaviv/kirigami_tessellations"><i class="fas fa-code"></i>
-code</a>  <a
-href="http://llorz.github.io/files/poster_25_SGA_kirigami.pdf"><i class="fas fa-file-powerpoint"></i>
-poster</a> <br>
-</p>
-</div>
-<figure>
-<p>
-<img src="images/paper25_sga_kirigami.jpg" height="80px" width="auto" align="right"/>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Geometry Distributions</strong></span>
-<br><a href="https://1zb.github.io/">Biao Zhang</a>, <u>Jing Ren</u>, <a
-href="http://peterwonka.net/">Peter Wonka</a> <br> <em>ICCV,
-2025</em> <br> <a
-href="https://1zb.github.io/GeomDist/"><i class="fas fa-globe"></i>
-project page</a>  <a
-href="https://arxiv.org/abs/2411.16076"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/1zb/GeomDist"><i class="fas fa-code"></i>
-code</a>  <a href=""><i class="fas fa-file-powerpoint"></i>
-poster</a><br>
-</p>
-</div>
-<figure>
-<p>
-<img src="images/paper25_iccv_geodist.jpg" height="100px" width="auto" align="right"/>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Computational Modeling of Gothic
-Microarchitecture</strong></span> <br><a
-href="https://segaviv.github.io/">Aviv Segall</a>, <u>Jing Ren</u>, <a
-href="https://kunstgeschichte.philhist.unibas.ch/de/personen/martin-schwarz/">Martin
-Schwarz</a>, <a href="https://igl.ethz.ch/people/sorkine/">Olga
-Sorkine-Hornung</a> <br> <em>SIGGRAPH, 2025</em> <br> <a
-href="https://igl.ethz.ch/projects/gothic/"><i class="fas fa-globe"></i>
-project page</a>  <a
-href="https://ren-jing.com/SIG25_goldschmiedrisse/"><i class="fas fa-laptop"></i>
-web demo</a>  <a
-href="http://llorz.github.io/files/paper_25_SIG_gothic.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://youtu.be/hNhnC6d3hAY"><i class="fas fa-video"></i>
-video</a> <a
-href="https://github.com/llorz/SIG25_goldschmiedrisse"><i class="fas fa-code"></i>
-code</a>  <a
-href="http://llorz.github.io/files/poster_25_SIG_gothic.pdf"><i class="fas fa-file-powerpoint"></i>
-poster</a><br>
-</p>
-</div>
-<figure>
-<p>
-<img src="images/paper25_sig_gothic.jpg" height="90px" width="auto" align="right"/>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2024">
-<p>2024</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Chebyshev Parameterization for Woven Fabric
-Modeling</strong></span> <br><a href="https://oehria.github.io/">Annika
-Öhri*</a>, <a href="https://segaviv.github.io/">Aviv Segall*</a>,
-<u>Jing Ren</u>, <a href="https://igl.ethz.ch/people/sorkine/">Olga
-Sorkine-Hornung</a> <br> <em>ACM Transactions on Graphics (Proc.
-SIGGRAPH Asia), 2024</em> (* equal contribution)<br> <a
-href="https://igl.ethz.ch/projects/chebyshev/"><i class="fas fa-globe"></i>
-project page</a>  <a
-href="http://llorz.github.io/files/paper_24_SGA_chebyparam.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://www.youtube.com/watch?v=lhTshybwd64"><i class="fas fa-video"></i>
-video</a> <a
-href="https://github.com/oehria/woven-fabric-chebyshev"><i class="fas fa-code"></i>
-code</a>  <a href=""><i class="fas fa-file-powerpoint"></i>
-slides</a> <br>
-</p>
-</div>
-<figure>
-<p>
-<img src="images/paper24_sga_cheby_eg1.gif" height="90px" width="auto" align="right"/>
-</figure>
-<img src="images/paper24_sga_cheby_eg2.gif" height="90px" width="auto" align="right"/>
-</figure>
-</div>
-<div class="row">
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Fabric Tessellation: Realizing Freeform
-Surfaces by Smocking</strong></span> <br> <a
-href="https://segaviv.github.io/">Aviv Segall</a>, <u>Jing Ren</u>, <a
-href="https://avaxman.github.io/">Amir Vaxman</a>, <a
-href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> <br>
-<em>ACM Transactions on Graphics (Proc. SIGGRAPH), 2024</em> <br> <a
-href="https://igl.ethz.ch/projects/3dsmocking/"><i class="fas fa-globe"></i>
-project page</a>  <a
-href="https://segaviv.github.io/smock_comparison/"><i class="fas fa-laptop"></i>
-web demo</a>  <a
-href="http://llorz.github.io/files/paper_24_SIG_3dsmocking.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://igl.ethz.ch/projects/3dsmocking/3dsmocking_suppl_video.mp4"><i class="fas fa-video"></i>
-video</a> <a
-href="https://github.com/segaviv/SmockingTessellations"><i class="fas fa-code"></i>
-code</a>  <a
-href="http://llorz.github.io/files/slides_24_SIG_3dsmocking.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a>  <a
-href="http://llorz.github.io/files/poster_24_SIG_3dsmocking.pdf"><i class="fas fa-file-powerpoint"></i>
-poster</a> <br> <a
-href="https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html/"><i class="fa fa-trophy">
-</i> Best Paper Honorable Mention</a><br>
-</p>
-</div>
-<figure>
-<p>
-<img src="images/paper24_sig_3dsmocking.jpg" height="100px" width="auto" align="right"/>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Computational Smocking through
-Fabric-Thread Interaction</strong></span> <br> <a
-href="https://github.com/nifzhou">Ningfeng Zhou</a>, <u>Jing Ren</u>, <a
-href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> <br>
-<em>Eurographics 2024</em> <br> <a
-href="https://igl.ethz.ch/projects/italiansmocking/"><i class="fas fa-globe"></i>
-project page</a>  <a
-href="http://llorz.github.io/files/paper_24_EG_ItalianSmocking.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://www.youtube.com/watch?reload=9&amp;v=L6AdmSCmbFc&amp;feature=youtu.be"><i class="fas fa-video"></i>
-video</a> <a
-href="https://github.com/nifzhou/ItalianSmocking"><i class="fas fa-code"></i>
-code</a>  <a
-href="http://llorz.github.io/files/slides_24_EG_ItalianSmocking.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a> <br>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper24_eg_itatlian_smocking_front.png" height="90px" width="auto" align="right"/>
-<img src="images/paper24_eg_itatlian_smocking_back.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2023">
-<p>2023</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Digital 3D Smocking Design</strong></span>
-<br> <u>Jing Ren</u>, <a href="https://segaviv.github.io/">Aviv
-Segall</a>, <a href="https://igl.ethz.ch/people/sorkine/">Olga
-Sorkine-Hornung</a> <br> <em>ACM Transactions on Graphics (presented at
-SIGGRAPH Asia 2023)</em> <br> <a
-href="https://igl.ethz.ch/projects/smockingdesign/"><i class="fas fa-globe"></i>
-project page</a>  <a
-href="https://segaviv.github.io/smock_web/"><i class="fas fa-laptop"></i>
-web demo</a>  <a
-href="https://arxiv.org/abs/2309.07201"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://youtu.be/GNWhDYsAXiM"><i class="fas fa-video"></i>
-video</a> <a
-href="https://github.com/llorz/SmockingDesign"><i class="fas fa-code"></i>
-code</a>  <a
-href="http://llorz.github.io/files/slides_23_TOG_smocking.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a> <br> <a
-href="http://llorz.github.io/files/poster_23_TOG_smocking.pdf"><i class="fas fa-file-powerpoint"></i>
-poster</a>  <a
-href="https://youtu.be/vjnmbmO3zcg"><i class="fas fa-video"></i> suppl.
-mat.</a><br>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper23_tog_smocking.jpg" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2022">
-<p>2022</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<span class="optima"><strong>Smooth Non-Rigid Shape Matching via
-Effective Dirichlet Energy Optimization</strong></span> <br> <a
-href="http://www.lix.polytechnique.fr/Labo/Robin.Magnet/">Robin
-Magnet</a>, <u>Jing Ren</u>, <a
-href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a> <br>
-<em>International Conference on 3D Vision (3DV), 2022</em> <br> <a
-href="http://www.lix.polytechnique.fr/Labo/Robin.Magnet/3DV2022_smooth_corres/smooth_corres_main.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/RobinMagnet/smoothFM"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://github.com/llorz/3DV22_DeformingThings4DMatching_dataset"><i class="fas fa-code"></i>
-dataset</a>  <a
-href="https://www.youtube.com/watch?v=ipWwZjEKjRI"><i class="fas fa-video"></i>
-presentation</a><br> <a
-href="https://3dvconf.github.io/2022/prizes/"><i class="fa fa-trophy">
-</i> Best Paper Award</a><br>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper22_3dv_smooth_2.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Learning to Construct 3D Building
-Wireframes from 3D Line Clouds</strong></span><br> <a
-href="https://scholar.google.com/citations?user=D2w6FOMAAAAJ&amp;hl=en&amp;oi=sra">Yicheng
-Luo</a>, <u>Jing Ren</u>, <a
-href="https://www.semanticscholar.org/author/Xuefei-Zhe/9621748">Xuefei
-Zhe</a>, <a
-href="https://scholar.google.com/citations?user=2ztThPwAAAAJ">Di
-Kang</a>, <a href="http://www.pris.net.cn/en/yajingxu">Yajing Xu</a>, <a
-href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="http://linchaobao.github.io/">Linchao Bao</a> <br> <em>British
-Machine Vision Conference (BMVC), 2022</em> <br> <a
-href="https://arxiv.org/abs/2208.11948"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://ren-jing.com/files/paper_22_BMVC_wireframe_suppl.pdf"><i class="fas fa-file-pdf"></i>
-suppl.</a>  <a
-href="https://github.com/Luo1Cheng/LC2WF"><i class="fas fa-code"></i>
-code &amp; dataset</a>  <a
-href="https://ren-jing.com/files/poster_22_BMVC_wireframe.pdf"><i class="fas fa-file-pdf"></i>
-poster</a>  <a
-href="https://youtu.be/WVIPVl3Hu_M"><i class="fas fa-video"></i>
-presentation</a><br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper22_eccv_wireframe.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Gaussian Blue Noise</strong></span> <br>
-<a href="http://abdallagafar.com/">Abdalla G. M. Ahmed</a>, <u>Jing
-Ren</u>, <a href="http://peterwonka.net/">Peter Wonka</a> <br> <em>ACM
-Transactions on Graphics (Proc. SIGGRAPH Asia), 2022</em> <br> <a
-href="http://abdallagafar.com/"><i class="fas fa-globe"></i> project
-page</a>  <a
-href="https://arxiv.org/abs/2206.07798v1"><i class="fas fa-file-pdf"></i>
-paper</a><br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper22_sga_gbn.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>REALY: Rethinking the Evaluation of 3D
-Face Reconstruction</strong></span><br> <a
-href="https://zenghaochai.com/">Zenghao Chai*</a>, <a
-href="https://orcid.org/0000-0001-7078-868X">Haoxian Zhang*</a>, <u>Jing
-Ren</u>, <a
-href="https://scholar.google.com/citations?user=2ztThPwAAAAJ">Di
-Kang</a>, <a href="https://xuzhengzhuo.com/">Zhengzhuo Xu</a>, <a
-href="https://www.semanticscholar.org/author/Xuefei-Zhe/9621748">Xuefei
-Zhe</a>, <a
-href="https://scholar.google.com/citations?user=fYdxi2sAAAAJ&amp;hl=zh-CN&amp;oi=ao">Chun
-Yuan</a>, <a href="http://linchaobao.github.io/">Linchao Bao</a> <br>
-<em>European Conference on Computer Vision (ECCV), 2022</em> (* equal
-contribution)<br> <a
-href="https://www.realy3dface.com/"><i class="fas fa-globe"></i> project
-page</a>  <a
-href="https://arxiv.org/abs/2203.09729"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/czh-98/REALY"><i class="fas fa-code"></i>
-code</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper22_eccv_realy.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2021">
-<p>2021</p>
-</h3>
-</div>
-<!---
-<hr width="60px" align="right" style="margin-top:-5px; border-width: 1px; margin-bottom:-3px" >
---->
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Intuitive and Efficient Roof Modeling
-for Reconstruction and Synthesis</strong></span><br> <u>Jing Ren</u>, <a
-href="https://1zb.github.io/">Biao Zhang</a>, <a
-href="https://bojianwu.github.io/">Bojian Wu</a>, <a
-href="https://scholar.google.com.hk/citations?user=UqAybqgAAAAJ&amp;hl=en">Jianqiang
-Huang</a>, <a href="https://lubinfan.github.io/">Lubin Fan</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a>, <a
-href="http://peterwonka.net/">Peter Wonka</a> <br> <em>ACM Transactions
-on Graphics (Proc. SIGGRAPH Asia), 2021</em> <br> <a
-href="https://arxiv.org/abs/2109.07683"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/llorz/SGA21_roofOptimization"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://www.youtube.com/watch?v=MmyNTmV7lFM"><i class="fas fa-video"></i>
-suppl.</a>  <a
-href="https://ren-jing.com/files/slides_21_SGA_roofModeling.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a>  <a
-href="https://www.youtube.com/watch?v=1aVX-eF-1N0"><i class="fas fa-video"></i>
-presentation</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper21_sga_roofOpti_v2.png" height="100px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Shape Matching and Map Space Exploration
-via Functional Maps</strong></span><br> <u>Jing Ren</u> <br> <em>PhD
-Thesis, 2021</em> <br> <a
-href="https://ren-jing.com/files/phd_thesis_abstract.pdf"><i class="fas fa-file-pdf"></i>
-abstract</a>  <a
-href="https://repository.kaust.edu.sa/handle/10754/670353"><i class="fas fa-file-pdf"></i>
-thesis</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/kaust_logo.jpg" height="70px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Discrete Optimization for Shape
-Matching</strong></span><br> <u>Jing Ren</u>, <a
-href="https://sites.google.com/site/melzismn/">Simone Melzi</a>, <a
-href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a> <br>
-<em>Computer Graphics Forum (Proc. SGP), 2021</em> <br> <a
-href="http://www.lix.polytechnique.fr/~maks/papers/SGP21_DiscMapOpt.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="http://www.lix.polytechnique.fr/~maks/papers/SGP21_DiscMapOpt_SupMat.pdf"><i class="fas fa-file-pdf"></i>
-suppl.</a>  <a
-href="https://github.com/llorz/SGP21_discreteOptimization"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://ren-jing.com/files/slides_21_SGP_discreteOpti.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a>  <a
-href="https://www.youtube.com/watch?v=_PAR-4WHOic"><i class="fas fa-video"></i>
-presentation</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper21_sgp_discreteOpti.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Fast Sinkhorn Filters: Using Matrix
-Scaling for Non-Rigid Shape Correspondence with Functional
-Maps</strong></span><br> <a
-href="https://sites.google.com/view/paigautam/home">Gautam Pai</a>,
-<u>Jing Ren</u>, <a
-href="https://sites.google.com/site/melzismn/">Simone Melzi</a>, <a
-href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a> <br>
-<em>Proc. IEEE Conference on Computer Vision and Pattern Recognition
-(CVPR), 2021</em> <br> <a
-href="https://hal.archives-ouvertes.fr/hal-03184936/document"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://hal.archives-ouvertes.fr/hal-03184936/file/10374-supp.pdf"><i class="fas fa-file-pdf"></i>
-suppl.</a>  <a
-href="https://github.com/paigautam/CVPR21_FastSinkhornFilters"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://drive.google.com/file/d/1hX06R5IvoRICebYkLg7s4hv04X5npBXJ/view"><i class="fas fa-file-pdf"></i>
-poster</a>  <a
-href="https://www.youtube.com/watch?v=nI7-mpibgus&amp;ab_channel=GautamPai"><i class="fas fa-video"></i>
-presentation</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper21_cvpr_sinkhorn.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2020">
-<p>2020</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Geometric analysis of shape variability
-of lower jaws of prehistoric humans</strong></span><br> <u>Jing Ren</u>,
-<a href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="https://www.researchgate.net/profile/Harihara-Gowtham">Gowtham
-Harihara</a>, <a href="http://www.lix.polytechnique.fr/~maks/">Maks
-Ovsjanikov</a> <br> <em>L’Anthropologie, 2020</em> <br> <a
-href="https://www.sciencedirect.com/science/article/pii/S0003552120301035"><i class="fas fa-file-pdf"></i>
-paper (official)</a>  <a
-href="http://llorz.github.io/files/paper_20_jaws.pdf"><i class="fas fa-file-pdf"></i>
-paper (preprint)</a>  <a
-href="https://github.com/llorz/PROJ2020_jaws"><i class="fas fa-code"></i>
-code</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper20_proj_jaws.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>MapTree: Recovering Multiple Solutions
-in the Space of Maps</strong></span><br> <u>Jing Ren</u>, <a
-href="https://sites.google.com/site/melzismn/">Simone Melzi</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a>, <a
-href="http://peterwonka.net/">Peter Wonka</a> <br> <em>ACM Transactions
-on Graphics (Proc. SIGGRAPH Asia), 2020</em> <br> <a
-href="https://arxiv.org/abs/2006.02532"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/llorz/SGA20_mapExplor"><i class="fas fa-code"></i>
-code</a>  <a
-href="http://llorz.github.io/files/slides_20_SGA_maptree.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a>  <a
-href="https://www.youtube.com/watch?v=MSStZh4Houk"><i class="fas fa-video"></i>
-presentation</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper20_sga_maptree.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>MGCN: Descriptor Learning using
-Multiscale GCNs</strong></span><br> <a
-href="https://sites.google.com/view/yiqun-wang/home">Yiqun Wang</a>,
-<u>Jing Ren</u>, <a
-href="https://sites.google.com/site/yandongming/">Dongming Yan</a>, <a
-href="https://jianweiguo.net/">Jianwei Guo</a>, <a
-href="http://people.ucas.ac.cn/~zhangxiaopeng?language=en#%20155727">Xiaopeng
-Zhang</a>, <a href="http://peterwonka.net/">Peter Wonka</a> <br> <em>ACM
-Transactions on Graphics (Proc. SIGGRAPH), 2020</em> <br> <a
-href="https://arxiv.org/abs/2001.10472"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/yiqun-wang/MGCN"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://drive.google.com/file/d/1s1lGZ5THV7OM9l1t5C_ZClmyAT2MkDjt/view"><i class="fas fa-file-powerpoint"></i>
-slides</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper20_sig_mgcn.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Consistent ZoomOut: Efficient Spectral
-Map Synchronization</strong></span><br> <a
-href="https://novalhuang.wixsite.com/rhuang">Ruqi Huang</a>, <u>Jing
-Ren</u>, <a href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a> <br>
-<em>Computer Graphics Forum (Proc. SGP), 2020</em> <br> <a
-href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14084"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/ruqihuang/SGP2020_ConsistentZoomOut"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://www.youtube.com/watch?v=WhduuY9o8QQ&amp;t=24s&amp;ab_channel=RuqiHuang"><i class="fas fa-video"></i>
-presentation</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper20_sgp_czo.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2019">
-<p>2019</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>ZoomOut: Spectral Upsampling for
-Efficient Shape Correspondence</strong></span><br> <a
-href="https://sites.google.com/site/melzismn/">Simone Melzi*</a>,
-<u>Jing Ren</u>*, <a
-href="https://sites.google.com/site/erodola/">Emanuele Rodolà</a>, <a
-href="https://not-iitian.github.io/">Abhishek Sharma</a>, <a
-href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a> <br>
-<em>ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2019</em> (*
-equal contribution) <br> <a
-href="https://arxiv.org/abs/1904.07865"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/llorz/SGA19_zoomOut"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://ren-jing.com/files/slides_19_SGA_zoomout.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a><br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper19_sga_zoomout.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Structured Regularization of Functional
-Map Computations</strong></span><br> <u>Jing Ren</u>, <a
-href="https://dblp.org/pid/230/7842.html">Mikhail Panine</a>, <a
-href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a> <br>
-<em>Computer Graphics Forum (Proc. SGP), 2019</em> <br> <a
-href="https://ren-jing.com/files/paper_19_SGP_structured.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/llorz/SGP19_complex_resolvent_laplacian"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://ren-jing.com/files/slides_19_SGP_structured.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper19_sgp_resolvent.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2018">
-<p>2018</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Continuous and Orientation-preserving
-Correspondence via Functional Maps</strong></span><br> <u> Jing Ren</u>,
-<a
-href="https://scholar.google.com/citations?user=zsGbyGYAAAAJ&amp;hl=fr">Adrien
-Poulenard</a>, <a href="http://peterwonka.net/">Peter Wonka</a>, <a
-href="http://www.lix.polytechnique.fr/~maks/">Maks Ovsjanikov</a> <br>
-<em>ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2018</em> <br>
-<a
-href="https://ren-jing.com/files/paper_18_SGA_bcicp.pdf"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/llorz/SGA18_orientation_BCICP_code"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://ren-jing.com/files/slides_18_SGA_bcicp.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper18_sga_bcicp.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row" style="margin-top:-5px; margin-bottom:0px">
-<h3 class="optima" id="2017">
-<p>2017</p>
-</h3>
-</div>
-<div class="row">
-
-<div class="column_paper" style="column-gap:20px">
-<p><span class="optima"><strong>Joint Graph Layouts for Visualizing
-Collections of Segmented Meshes</strong></span><br> <u>Jing Ren</u>, <a
-href="https://scholar.google.de/citations?user=em4IRO4AAAAJ&amp;hl=en">Jens
-Schneider</a>, <a href="http://www.lix.polytechnique.fr/~maks/">Maks
-Ovsjanikov</a>, <a href="http://peterwonka.net/">Peter Wonka</a> <br>
-<em>IEEE Transactions on Visualization and Computer Graphics (TVCG),
-2017</em> <br> <a
-href="https://ieeexplore.ieee.org/document/8031987/"><i class="fas fa-file-pdf"></i>
-paper</a>  <a
-href="https://github.com/llorz/TVCG17_JointMap_code"><i class="fas fa-code"></i>
-code</a>  <a
-href="https://ren-jing.com/files/slides_17_TVCG_jointLayout.pdf"><i class="fas fa-file-powerpoint"></i>
-slides</a>  <a
-href="https://www.youtube.com/watch?v=Z-mr97gtMcM&amp;ab_channel=PeterWonkaResearch"><i class="fas fa-video"></i>
-video</a> <br></p>
-</p>
-</div>
-<figure>
-<p>
-<p><img src="images/paper17_tvcg_graph.png" height="90px" width="auto" align="right"/></p>
-</figure>
-</div>
-<div class="row">
-<h1 class="optima">
-<p>Education</p>
-</h1>
-</div>
-<div class="row">
-<div class="column3">
-<p>
-<p><img src="images/kaust_logo.jpg" style="height:55px; margin-right:5px" align="left"/>
-Ph.D. in Computer Science <br> <span class="optima"><strong>KAUST,
-Visual Computing Center</strong></span><br> <em>2015 - 2021</em></p>
-</p>
-</div>
-<div class="column3">
-<p>
-<p><img src="images/ox_logo.png" style="height:60px; margin-right:5px; margin-left:20px" align="left"/>
-M.Sc. in Financial Mathematics <br> <span class="optima"><strong>Oxford
-University</strong></span><br> <em>2014 - 2015</em></p>
-</p>
-</div>
-<div class="column3">
-<p>
-<p><img src="images/zju_logo.png" style="height:60px; margin-right:5px" align="left"/>
-B.Sc. in Math and Applied Math <br> <span
-class="optima"><strong>Zhejiang University</strong></span><br> <em>2010
-- 2014</em></p>
-</p>
-</div>
-</div>
-<p><br></p>
-<div class="row">
-<h1 class="optima">
-<p>Research Experience</p>
-</h1>
-</div>
-<div class="row">
-<div class="column3">
-<p>
-<p><img src="images/tecent_ailab_logo.png" style="height:60px; margin-right:5px" align="left"/>
-<span class="optima"><strong>Tencent</strong></span><br> AI Lab <br>
-<em>Jul 2021 - Dec 2021</em></p>
-</p>
-</div>
-<div class="column3">
-<p>
-<p><img src="images/ali_logo.jpg" style="height:55px; margin-right:5px; margin-left:-10px" align="left"/>
-<span class="optima"><strong>Alibaba</strong></span><br> DAMO Academy
-<br> <em>Jul 2020 - Jun 2021</em></p>
-</p>
-</div>
-<div class="column3">
-<p>
-<p><img src="images/polytech_logo.png" style="height:60px; margin-right:8px" align="left"/>
-<span class="optima"><strong>Ecole Polytechnique</strong></span><br> LIX
-<br> <em>Jun - Aug 2017, 2018, 2019</em></p>
-</p>
-</div>
-</div>
-<p><br></p>
-<!---
-<div class="row">
-<div class="column2" style="column-gap:20px">
-<p><img src="images/ali_logo.jpg" style="height:55px; margin-right:-5px" align="left">
-<span class="optima">
-**Alibaba, DAMO Academy, AI Center (City Brain)**
-</span><br>
-<span>
-Supervised by Dr. [Lubin Fan][lubin]
-</span><br>
-<span>
-*July 2020 - June 2021*
-</span> 
-</p>
-</div>
-
-
-<div class="column2" style="column-gap:10px">
-<p>
-<img src="images/polytech_logo.png" style="height:60px; margin-right:5px" align="left">
-<span class="optima">
-**Ecole Polytechnique, LIX**
-</span><br>
-<span>
-Supervised by Prof. [Maks Ovsjanikov][maks]
-</span><br>
-<span>
-*Jun - Aug 2017, 2018, 2019*
-</span> 
-</p>
-</div>
-
-</div>
---->
-<style type="text/css">
-#TOC {
-  left: 50px;
-  width: 200px;
-  margin: 20px 0px 0px 0px;
-}
-
-.main-container {
-    margin-left: 2px;
-}
-</style>
-<style type="text/css">
-.column {
-  float: left;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 20%;
-}
-
-.column2 {
-  float: left;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 50%;
-}
-
-.column3 {
-  float: left;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 33%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 120%;
-  }
-}
-
-.column_info {
-  float: left;
-  margin-left: 0px;
-  width: 85%
-}
-
-.column_paper {
-  float: left;
-  margin-left: 0px;
-  width: 60%
-}
-
-.left_paper {
-  width: 45%;
-}
-
-.img-circle {
-    border-radius: 50%;
-}
-
-
-h1.optima{
-  font-size: 25px;
-  font-family: optima;
-  margin-bottom: 10pt
-}
-
-
-h3.optima{
-  font-size: 20px;
-  font-family: optima;
-  color:#2880e3
-}
-
-
-span.optima{font-family:optima, Sans-serif}
-</style>
-
-
-
-</div>
-</div>
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#home" class="logo" aria-label="Home">
+                    <span class="logo-text">Jing Ren</span>
+                </a>
+                
+                <div class="navbar-menu" id="navbarMenu">
+                    <ul class="nav-list" role="menubar">
+                        <li role="none">
+                            <a href="#about" class="nav-link" role="menuitem">About</a>
+                        </li>
+                        <li role="none">
+                            <a href="#publications" class="nav-link" role="menuitem">Publications</a>
+                        </li>
+                        <li role="none">
+                            <a href="#services" class="nav-link" role="menuitem">Academic Services</a>
+                        </li>
+                        <li role="none">
+                            <a href="#experience" class="nav-link" role="menuitem">Research Experience</a>
+                        </li>
+                        <li role="none">
+                            <a href="#education" class="nav-link" role="menuitem">Education</a>
+                        </li>
+                        <li role="none">
+                            <a href="/files/cv.pdf" class="nav-link" role="menuitem" target="_blank">
+                                <i class="fas fa-file-pdf" aria-hidden="true"></i> CV
+                            </a>
+                        </li>
+                    </ul>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarMenu">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="profile-section">
+                <!-- Left column: Photo and info -->
+                <div class="profile-image">
+                    <img src="/images/profile_from_abdalla_gbn.jpg" 
+                         alt="Jing Ren" 
+                         class="profile-photo"
+                         loading="lazy"
+                         width="160"
+                         height="160">
+                    
+                    <div class="profile-info">
+                        
+                        <div class="profile-actions">
+                            <!-- Only Google Scholar, GitHub, and Contact buttons -->
+                             <a href="https://scholar.google.com/citations?user=qkadBVcAAAAJ&hl=en" class="btn btn-secondary" target="_blank">
+                                <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+                            </a>
+                            <a href="https://github.com/llorz" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                            </a>
+                            <a href="mailto:jing.ren@inf.ethz.ch" class="btn btn-secondary">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right column: Text and bio -->
+                <div class="profile-text">
+                    <h1 class="profile-name" id="about-heading">Jing Ren
+                        <span class="profile-title">Senior Researcher, ETH Zurich</span>
+                    </h1>
+                    
+                    <div class="profile-bio">
+                        <p>I am currently a senior researcher in the <a href="https://igl.ethz.ch/" class="institution-link">Interactive Geometry Lab</a>, <a href="https://ethz.ch/en.html" class="institution-link">ETH Zurich</a>, advised by <a href="https://igl.ethz.ch/people/sorkine/" class="collaborator-link" data-collaborator="Olga">Prof. Olga Sorkine-Hornung</a>.
+                        I obtained my Ph.D. degree from the <a href="https://vcc.kaust.edu.sa/" class="institution-link">Visual Computing Center</a>, <a href="https://www.kaust.edu.sa/en" class="institution-link">KAUST</a>, advised by <a href="http://peterwonka.net" class="collaborator-link" data-collaborator="Peter">Prof. Peter Wonka</a> and <a href="http://www.lix.polytechnique.fr/~maks/" class="collaborator-link" data-collaborator="Maks">Prof. Maks Ovsjanikov</a>.
+                        Before that, I obtained the M.Sc. degree from the <a href="https://www.ox.ac.uk/" class="institution-link">University of Oxford</a>, UK, and the B.Sc. degree from <a href="https://www.zju.edu.cn/english/" class="institution-link">Zhejiang University</a>, China.
+                        My research is mainly related to shape analysis, geometry processing and digital fabrication. I am also interested in computer graphics and computer vision in general.</p>
+
+                        <p class="note-paragraph">
+                            <strong class="note-label">Note:</strong> I will be traveling from <b>mid-February to mid-May 2026</b>. During this period, due to limited internet access and availability, <b>I will be unable to accept new review invitations and may be slow in responding to emails</b>. Starting from mid-May 2026, I will be joining the Université de Montréal as an Assistant Professor.
+                            If you are interested in pursuing a Master's or PhD in geometry processing and/or digital fabrication, please feel free to contact me via email with your academic CV (please forgive my deplayed reply during this period).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section" aria-labelledby="publications-heading">
+            <h2 class="section-title" id="publications-heading">Publications</h2>
+
+            <!-- Publications Container -->
+            <div class="publications-container" id="publicationsContainer">
+                <!-- Dynamically loaded -->
+                <div class="loading">Loading publications...</div>
+            </div>
+        </section>
+
+
+
+        <!-- Academic Services Section -->
+        <section id="services" class="section" aria-labelledby="services-heading">
+            <h2 class="section-title" id="services-heading">Academic Services</h2>
+            <div class="services-grid" id="servicesContainer">
+                <!-- Content will be loaded from services.json -->
+                <div class="loading">Loading academic services...</div>
+            </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="experience" class="section" aria-labelledby="experience-heading">
+            <h2 class="section-title" id="experience-heading">Research Experience</h2>
+            <div class="experience-grid" id="experienceContainer">
+                <!-- Research experience items will be loaded from JSON -->
+                <div class="loading">Loading research experience...</div>
+            </div>
+        </section>
+
+        <!-- Education Section (NOW AT THE BOTTOM) -->
+        <section id="education" class="section" aria-labelledby="education-heading">
+            <h2 class="section-title" id="education-heading">Education</h2>
+            <div class="education-grid" id="educationContainer">
+                <!-- Content will be rendered by JavaScript -->
+                <div class="loading">Loading education...</div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Jing Ren
+                </div>
+                <div class="footer-links">
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="https://scholar.google.com/citations?user=qkadBVcAAAAJ&hl=en" 
+                           class="social-link" 
+                           title="Google Scholar" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Google Scholar profile">
+                            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/llorz" 
+                           class="social-link" 
+                           title="GitHub" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="GitHub profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://arxiv.org/a/ren_j_2.html" 
+                           class="social-link" 
+                           title="arXiv" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="arXiv publications">
+                            <i class="ai ai-arxiv" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://orcid.org/0000-0003-3114-3517" 
+                           class="social-link" 
+                           title="ORCID" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="ORCID profile">
+                            <i class="ai ai-orcid" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Publication Template (for dynamic rendering) -->
+    <template id="publicationTemplate">
+        <article class="publication" data-year="">
+            <div class="publication-content">
+                <h3 class="publication-title"></h3>
+                
+                <div class="publication-authors"></div>
+                
+                <div class="publication-venue">
+                    <span class="venue-name"></span>, 
+                    <span class="venue-year"></span>
+                    <span class="publication-awards-inline"></span>
+                    <span class="publication-note"></span>
+                </div>
+                
+                <div class="publication-links"></div>
+            </div>
+            
+            <div class="publication-media">
+                <!-- Dynamically added images -->
+            </div>
+        </article>
+    </template>
+
+    <!-- JavaScript Modules -->
+    <script type="module">
+        // Import main application
+        import { initWebsite } from './js/main.js';
+        
+        // Initialize website when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initWebsite);
+        } else {
+            initWebsite();
+        }
+        
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Fallback for browsers without JavaScript -->
+    <noscript>
+        <style>
+            .navbar-menu { display: block !important; }
+            .nav-toggle { display: none !important; }
+            .loading { display: none !important; }
+            [data-institution]::before {
+                content: "[" attr(data-institution) "]";
+                color: #666;
+            }
+        </style>
+        <div class="noscript-warning">
+            <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser.</p>
+        </div>
+    </noscript>
 </body>
 </html>

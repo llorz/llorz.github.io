@@ -1,0 +1,183 @@
+{
+  "collaborators": {
+    "Jing": {
+      "full_name": "Jing Ren",
+      "url": "https://ren-jing.com",
+      "institution": "ETH Zurich",
+      "self": true
+    },
+    "Aviv": {
+      "full_name": "Aviv Segall",
+      "url": "https://segaviv.github.io",
+      "institution": "ETH Zurich"
+    },
+    "Marcel": {
+      "full_name": "Marcel Padilla",
+      "title": "Dr.",
+      "url": "https://marcelpadilla.com"
+    },
+    "Olga": {
+      "full_name": "Olga Sorkine-Hornung",
+      "url": "https://igl.ethz.ch/people/sorkine/",
+      "institution": "ETH Zurich",
+      "title": "Prof."
+    },
+    "Biao": {
+      "full_name": "Biao Zhang",
+      "title": "Prof.",
+      "url": "https://1zb.github.io"
+    },
+    "Peter": {
+      "full_name": "Peter Wonka",
+      "title": "Prof.",
+      "url": "http://peterwonka.net",
+      "institution": "KAUST"
+    },
+    "Martin": {
+      "full_name": "Martin Schwarz",
+      "title": "Prof.",
+      "url": "https://kunstgeschichte.philhist.unibas.ch/de/personen/martin-schwarz/",
+      "institution": "University of Basel"
+    },
+    "Annika": {
+      "full_name": "Annika Öhri",
+      "url": "https://oehria.github.io",
+      "institution": "ETH Zurich"
+    },
+    "Amir": {
+      "full_name": "Amir Vaxman",
+      "title": "Prof.",
+      "url": "https://avaxman.github.io",
+      "institution": "Utrecht University"
+    },
+    "Ningfeng": {
+      "full_name": "Ningfeng Zhou",
+      "url": "https://github.com/nifzhou",
+      "institution": "ETH Zurich"
+    },
+    "Maks": {
+      "full_name": "Maks Ovsjanikov",
+      "title": "Prof.",
+      "url": "http://www.lix.polytechnique.fr/~maks/",
+      "institution": "École Polytechnique"
+    },
+    "Robin": {
+      "full_name": "Robin Magnet",
+      "url": "http://www.lix.polytechnique.fr/Labo/Robin.Magnet/",
+      "institution": "École Polytechnique"
+    },
+    "Yicheng": {
+      "full_name": "Yicheng Luo",
+      "url": "https://scholar.google.com/citations?user=D2w6FOMAAAAJ"
+    },
+    "Xuefei": {
+      "full_name": "Xuefei Zhe",
+      "url": "https://www.semanticscholar.org/author/Xuefei-Zhe/9621748"
+    },
+    "Di": {
+      "full_name": "Di Kang",
+      "title": "Dr.",
+      "url": "https://scholar.google.com/citations?user=2ztThPwAAAAJ"
+    },
+    "Yajing": {
+      "full_name": "Yajing Xu",
+      "url": "http://www.pris.net.cn/en/yajingxu"
+    },
+    "Linchao": {
+      "full_name": "Linchao Bao",
+      "title": "Dr.",
+      "url": "http://linchaobao.github.io"
+    },
+    "Abdalla": {
+      "full_name": "Abdalla G. M. Ahmed",
+      "title": "Dr.",
+      "url": "http://abdallagafar.com"
+    },
+    "Haoxian": {
+      "full_name": "Haoxian Zhang",
+      "url": "https://orcid.org/0000-0001-7078-868X"
+    },
+    "Zenghao": {
+      "full_name": "Zenghao Chai",
+      "url": "https://zenghaochai.com"
+    },
+    "Zhengzhuo": {
+      "full_name": "Zhengzhuo Xu",
+      "url": "https://xuzhengzhuo.com"
+    },
+    "Chun": {
+      "full_name": "Chun Yuan",
+      "url": "https://scholar.google.com/citations?user=fYdxi2sAAAAJ"
+    },
+    "Bojian": {
+      "full_name": "Bojian Wu",
+      "title": "Dr.",
+      "url": "https://bojianwu.github.io"
+    },
+    "Jianqiang": {
+      "full_name": "Jianqiang Huang",
+      "url": "https://scholar.google.com.hk/citations?user=UqAybqgAAAAJ"
+    },
+    "Lubin": {
+      "full_name": "Lubin Fan",
+      "title": "Dr.",
+      "url": "https://lubinfan.github.io"
+    },
+    "Simone": {
+      "full_name": "Simone Melzi",
+      "title": "Prof.",
+      "url": "https://sites.google.com/site/melzismn/"
+    },
+    "Gautam": {
+      "full_name": "Gautam Pai",
+      "url": "https://sites.google.com/view/paigautam/home"
+    },
+    "Gowtham": {
+      "full_name": "Hari Hara Gowtham Jetti",
+      "url": "https://www.researchgate.net/profile/Harihara-Gowtham"
+    },
+    "Yiqun": {
+      "full_name": "Yiqun Wang",
+      "url": "https://sites.google.com/view/yiqun-wang/home"
+    },
+    "Dongming": {
+      "full_name": "Dongming Yan",
+      "title": "Prof.",
+      "url": "https://sites.google.com/site/yandongming/"
+    },
+    "Jianwei": {
+      "full_name": "Jianwei Guo",
+      "url": "https://jianweiguo.net/"
+    },
+    "Xiaopeng": {
+      "full_name": "Xiaopeng Zhang",
+      "url": "http://people.ucas.ac.cn/~zhangxiaopeng"
+    },
+    "Ruqi": {
+      "full_name": "Ruqi Huang",
+      "title": "Prof.",
+      "url": "https://rqhuang88.github.io/"
+    },
+    "Emanuele": {
+      "full_name": "Emanuele Rodolà",
+      "title": "Prof.",
+      "url": "https://sites.google.com/site/erodola/"
+    },
+    "Abhishek": {
+      "full_name": "Abhishek Sharma",
+      "url": "https://not-iitian.github.io/"
+    },
+    "Mikhail": {
+      "full_name": "Mikhail Panine",
+      "url": "https://dblp.org/pid/230/7842.html"
+    },
+    "Adrien": {
+      "full_name": "Adrien Poulenard",
+      "url": "https://scholar.google.com/citations?user=zsGbyGYAAAAJ"
+    },
+    "Jens": {
+      "full_name": "Jens Schneider",
+      "url": "https://scholar.google.de/citations?user=em4IRO4AAAAJ"
+    }
+  }
+}

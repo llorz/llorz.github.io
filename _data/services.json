@@ -1,0 +1,96 @@
+{
+  "committees": [
+    {
+      "conference": "SIGGRAPH",
+      "years": ["2026", "2024", "2023"]
+    },
+    {
+      "conference": "SIGGRAPH Asia",
+      "years": ["2026", "2025"]
+    },
+    {
+      "conference": "Eurographics",
+      "years": ["2026", "2025"]
+    },
+    {
+      "conference": "SGP",
+      "years": ["2025", "2024", "2023"]
+    },
+    {
+      "conference": "Pacific Graphics",
+      "years": ["2025", "2024", "2022"]
+    },
+    {
+      "conference": "CAD/Graphics",
+      "years": ["2025"]
+    }
+  ],
+
+  
+  "reviewer": [
+    {
+      "conference": "SIGGRAPH",
+      "years": ["2025", "2024", "2023", "2022"]
+    },
+    {
+      "conference": "SIGGRAPH Asia",
+      "years": ["2025", "2024", "2023"]
+    },
+    {
+      "conference": "Eurographics",
+      "years": ["2026", "2025", "2024", "2023"]
+    },
+    {
+      "conference": "SGP",
+      "years": ["2025", "2024", "2023"]
+    },
+    {
+      "conference": "ACM ToG",
+      "years": ["2024", "2023", "2022", "2021"]
+    },
+    {
+      "conference": "IEEE TVCG",
+      "years": ["2026", "2024", "2021"]
+    },
+    {
+      "conference": "CGF",
+      "years": ["2025", "2024", "2022"]
+    },
+    {
+      "conference": "CHI",
+      "years": ["2026"]
+    },
+    {
+      "conference": "IEEE CGA",
+      "years": ["2025", "2018"]
+    },
+    {
+      "conference": "ECCV",
+      "years": ["2024"]
+    },
+    {
+      "conference": "SCF",
+      "years": ["2024"]
+    },
+    {
+      "conference": "ICML",
+      "years": ["2023"]
+    },
+    {
+      "conference": "ISPRS",
+      "years": ["2023"]
+    },
+    {
+      "conference": "Computers & Graphics",
+      "years": ["2023"]
+    },
+    {
+      "conference": "NeurIPS",
+      "years": ["2022"]
+    },
+    {
+      "conference": "BMVC",
+      "years": ["2022"]
+    }
+  ]
+}

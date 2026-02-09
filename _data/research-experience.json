@@ -1,0 +1,50 @@
+{
+  "research_experience": [
+    {
+      "id": "udm_assistant_professor",
+      "institution": "University of Montreal",
+      "lab": "",
+      "title": "Assistant Professor",
+      "period": "To start May 2026"
+    },
+    {
+      "id": "eth_senior_scientist",
+      "institution": "ETH Zurich",
+      "lab": "Interactive Geometry Lab",
+      "title": "Senior Researcher",
+      "period": "July 2023 - Feb 2026",
+      "advisor": "Olga"
+    },
+    {
+      "id": "eth_postdoc",
+      "institution": "ETH Zurich",
+      "lab": "Interactive Geometry Lab",
+      "title": "Postdoctoral Researcher",
+      "period": "Dec 2021 - Jun 2023",
+      "advisor": "Olga"
+    },
+    {
+      "id": "tencent_intern",
+      "institution": "Tencent",
+      "lab": "AI Lab",
+      "title": "Researcher",
+      "period": "Jul 2021 - Dec 2021"
+    },
+    {
+      "id": "alibaba_intern",
+      "institution": "Alibaba",
+      "lab": "DAMO Academy, City Brain",
+      "title": "Research Intern",
+      "period": "Jul 2020 - Jun 2021",
+      "advisor": "Lubin"
+    },
+    {
+      "id": "polytechnique_visitor",
+      "institution": "Ecole Polytechnique",
+      "lab": "LIX",
+      "title": "Research Visitor",
+      "period": "Jun - Aug 2017, 2018, 2019",
+      "advisor": "Maks"
+    }
+  ]
+}

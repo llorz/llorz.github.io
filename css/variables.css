@@ -1,0 +1,159 @@
+/* 
+ * CSS Variables - All website configuration
+ * Edit this file to change colors, fonts, sizes, etc.
+ */
+
+:root {
+  /* ===== COLORS ===== */
+  --color-primary: #65b5ff;
+  --color-background: #ffffff;
+  --color-surface: #65b5ff20;
+  --color-note: #f26a8d; 
+  --color-line: #f26a8d60;
+  
+  /* Text colors */
+  --color-text-primary: #212529;
+  --color-text-secondary: #6c757d;
+  --color-text-light: #65b5ff;
+  --color-text-inverse: #ffffff;
+  
+  /* Link colors */
+  --color-link: #65b5ff;
+  --color-link-hover: #1a5ca8;
+  
+  /* Border and status colors */
+  --color-border: #dee2e6;
+  --color-border-hover: #2880e3;
+  --color-error: #dc3545;
+  --color-warning: #ffc107;
+  
+  /* Award colors */
+  --color-award-bg: #ffebf3;
+  --color-award-border: #ffadbb;
+  --color-award-text: #ffafcc;
+  --color-award-icon: #f26a8d;
+  
+  /* Note paragraph colors */
+  --color-note-paragraph-bg: #fff5f5;
+  --color-note-border: var(--color-note);
+  
+  /* ===== TYPOGRAPHY ===== */
+  /* Font families */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  
+  /* Font sizes - Consistent hierarchy */
+  --font-size-xs: 0.85rem;     /* 12px - Lab, date, note, small text */
+  --font-size-sm: 0.9rem;      /* 13px - Affiliation, title */
+  --font-size-base: 0.95rem;    /* 14px - Body text, publication titles */
+  --font-size-lg: 1.1rem;        /* 16px - Section titles, main headings */
+  --font-size-xl: 1.1rem;      /* 18px */
+  --font-size-2xl: 1.25rem;    /* 20px */
+  --font-size-3xl: 1.5rem;     /* 24px */
+  --font-size-4xl: 1.75rem;    /* 28px */
+  
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Line heights */
+  --line-height-tight: 1.4;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.5;
+  
+  /* ===== SPACING ===== */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.25rem;
+  --spacing-md: 0.35rem;
+  --spacing-lg: 0.5rem;
+  --spacing-xl: 1rem;
+  --spacing-2xl: 1.5rem;
+  --spacing-3xl: 1.75rem;
+  
+  /* Publication specific spacing */
+  --publication-padding: var(--spacing-sm);
+  --publication-margin-bottom: var(--spacing-xs);
+  --year-group-gap: var(--spacing-md);
+  
+  /* ===== BORDERS & SHADOWS ===== */
+  /* Border radius */
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.25rem;
+  --border-radius-lg: 0.375rem;
+  --border-radius-full: 9999px;
+  
+  /* Border thickness */
+  --border-thickness-xs: 1px;
+  --border-thickness-sm: 1.5px;
+  
+  /* Text underline */
+  --text-underline-thickness: 1px;
+  --text-underline-thickness-hover: 2px;
+  --text-underline-offset: 2px;
+  --text-decoration-color: var(--color-primary);
+  
+  /* Publication border */
+  --publication-border: var(--border-thickness-xs) solid var(--color-border);
+  --publication-border-hover: var(--border-thickness-xs) solid var(--color-border-hover);
+  
+  /* Shadows */
+  --shadow-sm: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 4px 8px -4px rgba(0, 0, 0, 0.1);
+  
+  /* Publication shadow */
+  --publication-shadow-hover: var(--shadow-sm);
+  
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  
+  /* Publication transition */
+  --publication-transition: all var(--transition-fast);
+  
+  /* ===== Z-INDEX ===== */
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1050;
+  
+  /* ===== LAYOUT ===== */
+  /* Container */
+  --container-max-width: 1000px;
+  --container-padding: var(--spacing-lg);
+  
+  /* ===== COMPONENTS ===== */
+  /* Navbar */
+  --navbar-height: 3.5rem;
+  --navbar-background: var(--color-background);
+  --navbar-shadow: var(--shadow-sm);
+  
+  /* Publication Images */
+  --publication-image-max-height: 80px;
+  --publication-image-min-height: 80px;
+  /* Institution */
+  --institution-logo-size-sm: 2rem;
+  
+  /* Buttons */
+  --btn-border-width: var(--border-thickness-xs);
+  
+  /* ===== ICONS ===== */
+  --icon-size-sm: 0.75rem;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  :root {
+    --color-background: #ffffff;
+    --color-text-primary: #000000;
+    --color-text-secondary: #333333;
+    --spacing-md: 0.25rem;
+    --spacing-lg: 0.5rem;
+    --publication-border: 1px solid #ddd;
+    --publication-padding: 0.125rem;
+    --publication-image-max-height: 60px;
+    --color-note: #666666; /* Darker for print */
+  }
+}

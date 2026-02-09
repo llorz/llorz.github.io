@@ -1,0 +1,95 @@
+{
+  "institutions": {
+
+    "ETH": {
+      "name": "ETH Zurich",
+      "abbr": "ETH",
+      "url": "https://ethz.ch/en.html",
+      "logo": "images/eth_logo.png",
+      "country": "Switzerland",
+      "type": "university"
+    },
+    "IGL": {
+      "name": "Interactive Geometry Lab",
+      "abbr": "IGL",
+      "url": "https://igl.ethz.ch/",
+      "logo": "images/igl_logo.png",
+      "parent": "ETH",
+      "type": "lab"
+    },
+    
+
+    "KAUST": {
+      "name": "King Abdullah University of Science and Technology",
+      "abbr": "KAUST",
+      "url": "https://www.kaust.edu.sa/en",
+      "logo": "images/kaust_logo.jpg",
+      "country": "Saudi Arabia",
+      "type": "university"
+    },
+    "VCC": {
+      "name": "Visual Computing Center",
+      "abbr": "VCC",
+      "url": "https://cemse.kaust.edu.sa/vcc",
+      "logo": "images/vcc_logo.png",
+      "parent": "KAUST",
+      "type": "research_center"
+    },
+    
+    
+    "Oxford": {
+      "name": "University of Oxford",
+      "abbr": "Oxford",
+      "url": "https://www.ox.ac.uk",
+      "logo": "images/ox_logo.png",
+      "country": "UK",
+      "type": "university"
+    },
+    "ZJU": {
+      "name": "Zhejiang University",
+      "abbr": "ZJU",
+      "url": "https://www.zju.edu.cn/english",
+      "logo": "images/zju_logo.png",
+      "country": "China",
+      "type": "university"
+    },
+    
+
+    "Tencent": {
+      "name": "Tencent",
+      "abbr": "Tencent",
+      "url": "https://ai.tencent.com",
+      "logo": "images/tecent_ailab_logo.png",
+      "country": "China",
+      "type": "company"
+    },
+    "Alibaba": {
+      "name": "Alibaba Group",
+      "abbr": "Alibaba",
+      "url": "https://damo.alibaba.com",
+      "logo": "images/ali_logo.jpg",
+      "country": "China",
+      "type": "company"
+    },
+    
+
+    "Polytechnique": {
+      "name": "École Polytechnique",
+      "abbr": "Polytechnique",
+      "url": "https://www.polytechnique.edu",
+      "logo": "images/polytech_logo.png",
+      "country": "France",
+      "type": "university"
+    },
+
+    "LIX": {
+      "name": "LIX Computer Science Laboratory",
+      "abbr": "LIX",
+      "url": "https://www.lix.polytechnique.fr",
+      "logo": "images/lix_logo.png",
+      "parent": "Polytechnique",
+      "type": "lab"
+    }
+
+  }
+}
