@@ -2,6 +2,9 @@
  * Data loading and caching
  */
 
+import { DATA_PATHS } from './config.js'; 
+
+
 class DataLoader {
   constructor() {
     this.cache = new Map();
@@ -29,10 +32,10 @@ class DataLoader {
   async loadAllData() {
     try {
       const [publications, collaborators, venues, services] = await Promise.all([
-        this.fetchJSON('/_data/publications.json'),
-        this.fetchJSON('/_data/collaborators.json'),
-        this.fetchJSON('/_data/venues.json'),
-        this.fetchJSON('/_data/services.json').catch(() => ({ 
+        this.fetchJSON(DATA_PATHS.publications),      // Use DATA_PATHS
+        this.fetchJSON(DATA_PATHS.collaborators),
+        this.fetchJSON(DATA_PATHS.venues),
+        this.fetchJSON(DATA_PATHS.services).catch(() => ({ 
           committees: [], 
           reviewer: [] 
         }))

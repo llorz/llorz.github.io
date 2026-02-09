@@ -3,11 +3,11 @@
  */
 
 export const DATA_PATHS = {
-  publications: '_data/publications.json',
-  collaborators: '_data/collaborators.json',
-  venues: '_data/venues.json',
-  services: '_data/services.json',
-  researchExperience: '_data/research-experience.json'
+  publications: './_data/publications.json',
+  collaborators: './_data/collaborators.json',
+  venues: './_data/venues.json',
+  services: './_data/services.json',
+  researchExperience: './_data/research-experience.json'
 };
 
 export const RESOURCE_ICONS = {
