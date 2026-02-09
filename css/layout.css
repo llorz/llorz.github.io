@@ -540,3 +540,47 @@
     padding: 0.03125rem 0;
   }
 }
+
+/* For mobile screens (768px and below) */
+@media (max-width: 768px) {
+  .profile-image {
+    display: none; /* Hide the entire left column */
+  }
+  
+  .profile-text {
+    width: 100%; /* Take full width */
+  }
+  
+  /* Optional: Add some spacing adjustment */
+  .profile-section {
+    margin-top: 0;
+  }
+  
+  .profile-name {
+    font-size: 2rem; /* Adjust heading size for mobile */
+    margin-bottom: 1rem;
+  }
+  
+  .profile-title {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* For very small phones (480px and below) - additional refinement */
+@media (max-width: 480px) {
+  .profile-name {
+    font-size: 1.75rem;
+  }
+  
+  .profile-bio p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .note-paragraph {
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+}
