@@ -323,8 +323,6 @@ export class Renderer {
     `;
   }
 
-  // ===== EDUCATION RENDERING =====
-  
   renderEducation() {
     const educationData = [
       {
@@ -351,6 +349,44 @@ export class Renderer {
     ];
     
     return educationData.map(edu => {
+      // Build supervisors HTML if they exist
+      let supervisorsHtml = '';
+      if (edu.supervisors) {
+        const supervisorLinks = edu.supervisors.map(sup => {
+          const collaborator = this.collaborators[sup.collaborator];
+          const title = collaborator?.title || '';
+          const fullName = collaborator?.full_name || sup.name;
+          const displayName = title ? `${title} ${fullName}` : fullName;
+          
+          // Create actual <a> tag if URL exists, otherwise just text
+          if (collaborator?.url) {
+            return `<a href="${collaborator.url}" class="collaborator-link" target="_blank" rel="noopener noreferrer">${displayName}</a>`;
+          } else {
+            return `<span>${displayName}</span>`;
+          }
+        }).join(' and ');
+        
+        supervisorsHtml = `
+          <div class="edu-supervisors">
+            <strong>Supervisors:</strong> ${supervisorLinks}
+          </div>
+        `;
+      }
+      
+      // Build thesis HTML if it exists
+      let thesisHtml = '';
+      if (edu.thesis) {
+        thesisHtml = `
+          <div class="edu-thesis">
+            <strong>Thesis:</strong> 
+            ${edu.thesisLink ? 
+              `<a href="${edu.thesisLink}" class="thesis-link" target="_blank" rel="noopener noreferrer">${edu.thesis}</a>` :
+              edu.thesis
+            }
+          </div>
+        `;
+      }
+      
       return `
         <div class="education-item">
           <div class="edu-details">
@@ -358,27 +394,8 @@ export class Renderer {
             <div class="edu-institution">${edu.institution}</div>
             <div class="edu-period-details">
               <div class="edu-period">${edu.period}</div>
-              ${edu.thesis ? `
-                <div class="edu-thesis">
-                  <strong>Thesis:</strong> 
-                  ${edu.thesisLink ? 
-                    `<a href="${edu.thesisLink}" class="thesis-link" target="_blank" rel="noopener noreferrer">${edu.thesis}</a>` :
-                    edu.thesis
-                  }
-                </div>
-              ` : ''}
-              ${edu.supervisors ? `
-                <div class="edu-supervisors">
-                  <strong>Supervisors:</strong> 
-                  ${edu.supervisors.map(sup => {
-                    const collaborator = this.collaborators[sup.collaborator];
-                    const title = collaborator?.title || '';
-                    const fullName = collaborator?.full_name || sup.name;
-                    const displayName = title ? `${title} ${fullName}` : fullName;
-                    return `<span class="collaborator-link" data-collaborator="${sup.collaborator}">${displayName}</span>`;
-                  }).join(' and ')}
-                </div>
-              ` : ''}
+              ${thesisHtml}
+              ${supervisorsHtml}
             </div>
           </div>
         </div>
@@ -386,8 +403,7 @@ export class Renderer {
     }).join('');
   }
 
-  // ===== RESEARCH EXPERIENCE RENDERING =====
-  
+
   renderResearchExperience(researchExperience) {
     if (!researchExperience || !Array.isArray(researchExperience)) {
       return '<p class="no-data">No research experience found.</p>';
@@ -408,7 +424,13 @@ export class Renderer {
         const collaborator = this.collaborators[exp.advisor];
         const title = collaborator.title || '';
         const displayName = title ? `${title} ${collaborator.full_name}` : collaborator.full_name;
-        advisorHtml = `Advised by <span class="collaborator-link" data-collaborator="${exp.advisor}">${displayName}</span>`;
+        
+        // Create actual <a> tag if URL exists, otherwise just text
+        if (collaborator.url) {
+          advisorHtml = `Advised by <a href="${collaborator.url}" class="collaborator-link" target="_blank" rel="noopener noreferrer">${displayName}</a>`;
+        } else {
+          advisorHtml = `Advised by <span>${displayName}</span>`;
+        }
       } else if (exp.note) {
         advisorHtml = exp.note;
       }
