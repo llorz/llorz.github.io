@@ -102,17 +102,26 @@ export class Renderer {
       images.push(`${id}_${i}.jpg`);
       images.push(`${id}_${i}.gif`);
       images.push(`${id}_${i}.jpeg`);
+      images.push(`${id}_${i}.mp4`);
     }
     
     images.push(`${id}.png`);
     images.push(`${id}.jpg`);
     images.push(`${id}.gif`);
     images.push(`${id}.jpeg`);
+    images.push(`${id}.mp4`);
     
     return images;
   }
 
   formatResources(id, resources = [], links = {}) {
+    // Check if "coming_soon" flag is set
+    if (links.coming_soon === true) {
+      return `
+      `;
+    }
+    
+    // Otherwise, render normal resources
     const resourceLinks = [];
     
     resources.forEach(resource => {
@@ -129,6 +138,11 @@ export class Renderer {
       if (type === 'paper' && resources.includes('paper')) {
         return;
       }
+      
+      if (type === 'coming_soon') return; // Skip the flag itself
+      
+      const isValidUrl = url && url.trim() !== '';
+      if (!isValidUrl) return;
       
       const iconClass = RESOURCE_ICONS[type] || 'fas fa-external-link-alt';
       const displayName = RESOURCE_NAMES[type] || type.charAt(0).toUpperCase() + type.slice(1);

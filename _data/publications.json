@@ -1,6 +1,30 @@
 {
   "publications": [
     {
+      "id": "26_SIG_kiritutte",
+      "title": "Deployable Kirigami on Arbitrary Planar Graphs",
+      "authors": ["Aviv", "Jing", "Olga"],
+      "resources": ["paper", "poster", "slides"],
+      "image_extensions": [".gif"],
+      "links": {
+        "coming_soon": true
+      }
+    },
+
+    {
+      "id": "26_SIGconf_lowpoly",
+      "title": "Gradient Descent in the ALPS: Abstracted Low-Poly Stylization and Fabrication",
+      "authors": ["Ruben", "Alex", "Peizhuo", "Annika", "Aviv", "Tanguy", "Danielle", "Marcel", "Jing", "Olga"],
+      "equal_contribution": ["Ruben", "Alex"],
+      "note": "(* equal contribution)",
+      "resources": ["paper", "poster", "slides"],
+      "image_extensions": [".gif"],
+      "links": {
+        "coming_soon": true
+      }
+    },
+
+    {
       "id": "25_SGAconf_kirigami",
       "title": "Reconfigurable Hinged Kirigami Tessellations",
       "authors": ["Aviv", "Jing", "Marcel", "Olga"],

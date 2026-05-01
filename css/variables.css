@@ -131,8 +131,8 @@
   --navbar-shadow: var(--shadow-sm);
   
   /* Publication Images */
-  --publication-image-max-height: 80px;
-  --publication-image-min-height: 80px;
+  --publication-image-max-height: 90px;
+  --publication-image-min-height: 90px;
   /* Institution */
   --institution-logo-size-sm: 2rem;
   
@@ -153,7 +153,7 @@
     --spacing-lg: 0.5rem;
     --publication-border: 1px solid #ddd;
     --publication-padding: 0.125rem;
-    --publication-image-max-height: 60px;
+    --publication-image-max-height: 100px;
     --color-note: #666666; /* Darker for print */
   }
 }

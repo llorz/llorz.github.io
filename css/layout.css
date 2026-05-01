@@ -361,6 +361,21 @@
   min-width: 0;
 }
 
+.publication-authors {
+  max-width: 720px;  /* Limit width for long author lists */
+  word-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+/* For mobile, make it even narrower */
+@media (max-width: 768px) {
+  .publication-authors {
+    max-width: 100%;
+    font-size: 0.85rem;
+  }
+}
+
 .publication-media {
   flex-shrink: 0;
   display: flex;

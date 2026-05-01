@@ -419,6 +419,7 @@ a:focus-visible {
   flex-wrap: nowrap;
   gap: var(--spacing-xs);
   justify-content: flex-end;
+  max-width: 250px;
 }
 
 .publication-media img + img {
