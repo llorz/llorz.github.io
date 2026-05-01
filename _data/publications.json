@@ -2,7 +2,7 @@
   "publications": [
     {
       "id": "26_SIG_kiritutte",
-      "title": "Deployable Kirigami on Arbitrary Planar Graphs",
+      "title": "Uniformly Deployable Kirigami on Arbitrary Planar Graphs",
       "authors": ["Aviv", "Jing", "Olga"],
       "resources": ["paper", "poster", "slides"],
       "image_extensions": [".gif"],
