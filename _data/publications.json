@@ -14,7 +14,7 @@
     {
       "id": "26_SIGconf_lowpoly",
       "title": "Gradient Descent in the ALPS: Abstracted Low-Poly Stylization and Fabrication",
-      "authors": ["Ruben", "Alex", "Peizhuo", "Annika", "Aviv", "Tanguy", "Danielle", "Marcel", "Jing", "Olga"],
+      "authors": ["Ruben", "Alex", "Peizhuo", "Tanguy", "Annika", "Aviv",  "Danielle", "Marcel", "Jing", "Olga"],
       "equal_contribution": ["Ruben", "Alex"],
       "note": "(* equal contribution)",
       "resources": ["paper", "poster", "slides"],
