@@ -4,10 +4,11 @@
       "id": "26_SIG_kiritutte",
       "title": "Uniformly Deployable Kirigami on Arbitrary Planar Graphs",
       "authors": ["Aviv", "Jing", "Olga"],
-      "resources": ["paper", "poster", "slides"],
+      "resources": [],
       "image_extensions": [".gif"],
       "links": {
-        "coming_soon": true
+        "code": "https://github.com/segaviv/tuttekiri",
+        "video": "https://youtu.be/lAtOGjTt69o"
       }
     },
 
@@ -17,10 +18,12 @@
       "authors": ["Ruben", "Alex", "Peizhuo", "Tanguy", "Annika", "Aviv",  "Danielle", "Marcel", "Jing", "Olga"],
       "equal_contribution": ["Ruben", "Alex"],
       "note": "(* equal contribution)",
-      "resources": ["paper", "poster", "slides"],
+      "resources": ["paper"],
       "image_extensions": [".gif"],
       "links": {
-        "coming_soon": true
+        "project": "https://rubenwiersma.nl/publications/2026/04/28/ALPS.html",
+        "code": "https://github.com/rubenwiersma/alps",
+        "video": ""
       }
     },
 
