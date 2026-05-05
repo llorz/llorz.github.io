@@ -1,10 +1,10 @@
 {
   "publications": [
     {
-      "id": "26_SIG_kiritutte",
+      "id": "26_SIG_tuttekiri",
       "title": "Uniformly Deployable Kirigami on Arbitrary Planar Graphs",
       "authors": ["Aviv", "Jing", "Olga"],
-      "resources": [],
+      "resources": ["paper"],
       "image_extensions": [".gif"],
       "links": {
         "code": "https://github.com/segaviv/tuttekiri",
