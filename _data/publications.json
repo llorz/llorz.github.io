@@ -21,9 +21,8 @@
       "resources": ["paper"],
       "image_extensions": [".gif"],
       "links": {
-        "project": "https://rubenwiersma.nl/publications/2026/04/28/ALPS.html",
-        "code": "https://github.com/rubenwiersma/alps",
-        "video": ""
+        "project": "https://alexandrebinninger.com/ALPS/",
+        "code": "https://github.com/rubenwiersma/alps"
       }
     },
 
