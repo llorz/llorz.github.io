@@ -1,6 +1,34 @@
 {
   "institutions": {
 
+    "UdeM": {
+      "name": "University of Montreal",
+      "abbr": "udem",
+      "url": "https://www.umontreal.ca/",
+      "logo": "images/udem_logo.png",
+      "country": "Canada",
+      "type": "university"
+    },
+
+    "MILA": {
+      "name": "Montreal Institute for Learning Algorithms",
+      "abbr": "MILA",
+      "url": "https://mila.quebec/en/",
+      "logo": "images/mila_logo.png",
+      "parent": "UdeM",
+      "type": "lab"
+    },
+
+    "diro": {
+      "name": "Department of Computer Science and Operations Research",
+      "abbr": "diro",
+      "url": "https://diro.umontreal.ca/english/home/",
+      "logo": "images/diro_logo.png",
+      "parent": "UdeM",
+      "type": "department"
+    },
+
+
     "ETH": {
       "name": "ETH Zurich",
       "abbr": "ETH",
@@ -9,6 +37,7 @@
       "country": "Switzerland",
       "type": "university"
     },
+
     "IGL": {
       "name": "Interactive Geometry Lab",
       "abbr": "IGL",
@@ -27,6 +56,7 @@
       "country": "Saudi Arabia",
       "type": "university"
     },
+
     "VCC": {
       "name": "Visual Computing Center",
       "abbr": "VCC",
@@ -45,6 +75,7 @@
       "country": "UK",
       "type": "university"
     },
+
     "ZJU": {
       "name": "Zhejiang University",
       "abbr": "ZJU",
