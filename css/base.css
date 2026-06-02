@@ -387,6 +387,8 @@ a:focus-visible {
   margin-bottom: var(--spacing-xs);
 }
 
+
+
 .resource-link {
   display: inline-flex;
   align-items: center;
@@ -439,6 +441,22 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.award-link {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  text-decoration: underline;
+  text-decoration-color: var(--color-note);  /* Pink underline using your --color-note */
+  text-decoration-thickness: var(--text-underline-thickness);
+  text-underline-offset: var(--text-underline-offset);
+}
+
+.award-link:hover {
+  color: var(--color-note);  /* Changes to theme blue on hover */
+  text-decoration: underline;
+  text-decoration-thickness: var(--text-underline-thickness-hover);
+}
 /* Collaborator links */
 .collaborator-link {
   color: var(--color-text-primary);
