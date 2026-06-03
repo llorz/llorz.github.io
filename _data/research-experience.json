@@ -3,14 +3,18 @@
     {
       "id": "udm_assistant_professor",
       "institution": "University of Montreal",
-      "lab": "",
+      "institution_link": "https://diro.umontreal.ca/english/home/",
+      "lab": "LIGUM",
+      "lab_link": "https://www.ligum.umontreal.ca/",
       "title": "Assistant Professor",
       "period": "May 2026 - Present"
     },
     {
       "id": "eth_senior_scientist",
       "institution": "ETH Zurich",
+      "institution_link": "https://ethz.ch/en.html",
       "lab": "Interactive Geometry Lab",
+      "lab_link": "https://igl.ethz.ch/",
       "title": "Senior Researcher",
       "period": "July 2023 - Feb 2026",
       "advisor": "Olga"
@@ -18,7 +22,9 @@
     {
       "id": "eth_postdoc",
       "institution": "ETH Zurich",
+      "institution_link": "https://ethz.ch/en.html",
       "lab": "Interactive Geometry Lab",
+      "lab_link": "https://igl.ethz.ch/",
       "title": "Postdoctoral Researcher",
       "period": "Dec 2021 - Jun 2023",
       "advisor": "Olga"
@@ -26,14 +32,18 @@
     {
       "id": "tencent_intern",
       "institution": "Tencent",
+      "institution_link": "https://www.tencent.com/en-us/index.html",
       "lab": "AI Lab",
+      "lab_link": "https://ailab.tencent.com/ailab/en/index/",
       "title": "Researcher",
       "period": "Jul 2021 - Dec 2021"
     },
     {
       "id": "alibaba_intern",
       "institution": "Alibaba",
+      "institution_link": "http://www.aliresearch.com/",
       "lab": "DAMO Academy, City Brain",
+      "lab_link": "https://damo.alibaba.com/",
       "title": "Research Intern",
       "period": "Jul 2020 - Jun 2021",
       "advisor": "Lubin"
@@ -41,7 +51,9 @@
     {
       "id": "polytechnique_visitor",
       "institution": "Ecole Polytechnique",
+      "institution_link": "https://www.polytechnique.edu/en",
       "lab": "LIX",
+      "lab_link": "https://www.lix.polytechnique.fr/",
       "title": "Research Visitor",
       "period": "Jun - Aug 2017, 2018, 2019",
       "advisor": "Maks"

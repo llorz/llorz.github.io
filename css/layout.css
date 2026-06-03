@@ -195,17 +195,16 @@
   line-height: var(--line-height-tight);
 }
 
-/* RESEARCH EXPERIENCE ITEMS */
+/* RESEARCH EXPERIENCE ITEMS - Clean version */
 .experience-item {
   display: flex;
   width: 100%;
-  padding: var(--spacing-xs) 0;
+  padding: var(--spacing-md) 0;
   position: relative;
   padding-left: 16px;
   margin-left: 8px;
 }
 
-/* Colored thin line on the left */
 .experience-item::before {
   content: '';
   position: absolute;
@@ -218,15 +217,18 @@
 }
 
 .experience-item + .experience-item {
-  border-top: none;
-  margin-top: 0;
-  padding-top: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
 }
 
 /* Experience details */
 .exp-details {
   width: 100%;
   min-width: 0;
+}
+
+.exp-title-line {
+  margin-bottom: 2px;
 }
 
 .exp-title {
@@ -261,6 +263,7 @@
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
   line-height: var(--line-height-tight);
+  margin-top: 0;
 }
 
 .exp-note::before {
@@ -362,7 +365,7 @@
 }
 
 .publication-authors {
-  max-width: 720px;  /* Limit width for long author lists */
+  max-width: 720px;
   word-wrap: break-word;
   word-break: break-word;
   line-height: 1.4;
@@ -382,16 +385,16 @@
   align-items: center;
   justify-content: flex-end;
   min-height: var(--publication-image-max-height);
-  max-width: 180px; /* Default max-width */
+  max-width: 180px;
   gap: var(--spacing-xs);
 }
 
 /* Publication images - FIXED HEIGHT SIZING */
 .publication-image {
-  height: var(--publication-image-max-height); /* Fixed height 90px */
-  width: auto; /* Auto width to maintain aspect ratio */
-  max-width: 100%; /* Only resize if too wide */
-  object-fit: contain; /* Maintain aspect ratio */
+  height: var(--publication-image-max-height);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: var(--border-radius-sm);
   background: white;
 }
@@ -404,19 +407,19 @@
 /* TWO IMAGES: side by side, share space equally */
 .publication-media img:first-child:nth-last-child(2),
 .publication-media img:first-child:nth-last-child(2) ~ img {
-  max-width: calc(50% - var(--spacing-xs) / 2); /* Share width equally */
+  max-width: calc(50% - var(--spacing-xs) / 2);
 }
 
 /* ===== FIX FOR WIDE IMAGES ===== */
 /* When there's only one image and it's wide, allow more width */
 .publication-media:has(img:only-child) {
-  max-width: 280px; /* Allow wider container for single images (was 180px) */
+  max-width: 280px;
 }
 
 /* Even wider for desktop */
 @media (min-width: 768px) {
   .publication-media:has(img:only-child) {
-    max-width: 320px; /* Allow even wider on desktop */
+    max-width: 320px;
   }
 }
 
@@ -479,12 +482,12 @@
   
   /* Adjust button width for desktop */
   .profile-actions {
-    align-items: stretch; /* Make buttons stretch to same width */
+    align-items: stretch;
   }
   
   .profile-actions .btn {
-    width: 100%; /* Full width of container */
-    max-width: 180px; /* Limit max width */
+    width: 100%;
+    max-width: 180px;
   }
 }
 
@@ -502,7 +505,7 @@
     max-height: var(--publication-image-max-height);
     order: 1;
     justify-content: center;
-    max-width: 100%; /* Full width on mobile */
+    max-width: 100%;
   }
   
   .publication-content {
@@ -515,7 +518,7 @@
   
   .profile-actions {
     flex-direction: column;
-    align-items: stretch; /* Make buttons stretch to full width */
+    align-items: stretch;
   }
   
   .btn {
@@ -559,20 +562,19 @@
 /* For mobile screens (768px and below) */
 @media (max-width: 768px) {
   .profile-image {
-    display: none; /* Hide the entire left column */
+    display: none;
   }
   
   .profile-text {
-    width: 100%; /* Take full width */
+    width: 100%;
   }
   
-  /* Optional: Add some spacing adjustment */
   .profile-section {
     margin-top: 0;
   }
   
   .profile-name {
-    font-size: 2rem; /* Adjust heading size for mobile */
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
   

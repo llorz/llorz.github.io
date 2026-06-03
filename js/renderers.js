@@ -439,7 +439,6 @@ export class Renderer {
         const title = collaborator.title || '';
         const displayName = title ? `${title} ${collaborator.full_name}` : collaborator.full_name;
         
-        // Create actual <a> tag if URL exists, otherwise just text
         if (collaborator.url) {
           advisorHtml = `Advised by <a href="${collaborator.url}" class="collaborator-link" target="_blank" rel="noopener noreferrer">${displayName}</a>`;
         } else {
@@ -449,15 +448,46 @@ export class Renderer {
         advisorHtml = exp.note;
       }
       
+      // Institution - using direct institution_link if provided
+      let institutionHtml = '';
+      if (exp.institution) {
+        if (exp.institution_link) {
+          institutionHtml = `<a href="${exp.institution_link}" class="institution-link" target="_blank" rel="noopener noreferrer">${exp.institution}</a>`;
+        } else {
+          institutionHtml = `<span class="institution-link">${exp.institution}</span>`;
+        }
+      }
+      
+      // Lab - using direct lab_link if provided
+      let labHtml = '';
+      if (exp.lab) {
+        if (exp.lab_link) {
+          labHtml = `<a href="${exp.lab_link}" class="collaborator-link" target="_blank" rel="noopener noreferrer">${exp.lab}</a>`;
+        } else {
+          labHtml = `<span class="collaborator-link">${exp.lab}</span>`;
+        }
+      } else if (exp.department) {
+        if (exp.department_link) {
+          labHtml = `<a href="${exp.department_link}" class="collaborator-link" target="_blank" rel="noopener noreferrer">${exp.department}</a>`;
+        } else {
+          labHtml = `<span class="collaborator-link">${exp.department}</span>`;
+        }
+      }
+      
+      // Build the combined title line
+      let combinedTitleHtml = '';
+      if (exp.title) {
+        combinedTitleHtml += `<span class="exp-title-text">${exp.title}</span>`;
+      }
+      combinedTitleHtml += ` at ${institutionHtml}`;
+      if (labHtml) {
+        combinedTitleHtml += ` (${labHtml})`;
+      }
+      
       return `
         <div class="experience-item">
           <div class="exp-details">
-            <div class="exp-title">${exp.title || ''}</div>
-            <div class="exp-institution-lab">
-              <span class="exp-institution">${exp.institution || 'Unknown'}</span>
-              ${exp.lab ? `<span class="exp-lab">${exp.lab}</span>` : ''}
-              ${exp.department ? `<span class="exp-lab">${exp.department}</span>` : ''}
-            </div>
+            <div class="exp-title-line">${combinedTitleHtml}</div>
             <div class="exp-period-note">
               ${exp.period ? `<span class="exp-period">${exp.period}</span>` : ''}
               ${advisorHtml ? `<span class="exp-note">${advisorHtml}</span>` : ''}

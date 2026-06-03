@@ -108,8 +108,8 @@ a:focus-visible {
   transition: all var(--transition-normal);
   user-select: none;
   vertical-align: middle;
-  width: 100%; /* Make buttons full width of container */
-  max-width: 200px; /* But limit max width */
+  width: 100%;
+  max-width: 200px;
 }
 
 .btn:focus-visible {
@@ -285,9 +285,58 @@ a:focus-visible {
   font-size: var(--font-size-lg);
 }
 
-/* Publication components - NO BORDERS */
+/* ===== LINK STYLES (Consolidated) ===== */
+
+/* Base institution link */
+.institution-link {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-thickness: var(--text-underline-thickness);
+  text-underline-offset: var(--text-underline-offset);
+}
+
+.institution-link:hover {
+  color: var(--color-primary);
+  text-decoration-thickness: var(--text-underline-thickness-hover);
+}
+
+/* Collaborator link */
+.collaborator-link {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  text-decoration: underline;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-thickness: var(--text-underline-thickness);
+  text-underline-offset: var(--text-underline-offset);
+}
+
+.collaborator-link:hover {
+  color: var(--color-primary);
+  text-decoration-thickness: var(--text-underline-thickness-hover);
+}
+
+/* Award link */
+.award-link {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  text-decoration: underline;
+  text-decoration-color: var(--color-note);
+  text-decoration-thickness: var(--text-underline-thickness);
+  text-underline-offset: var(--text-underline-offset);
+}
+
+.award-link:hover {
+  color: var(--color-note);
+  text-decoration: underline;
+  text-decoration-thickness: var(--text-underline-thickness-hover);
+}
+
+/* ===== PUBLICATION COMPONENTS ===== */
 .publication {
-  /* border: var(--publication-border); REMOVED BORDER */
   border-radius: var(--border-radius-md);
   background-color: var(--color-background);
   transition: var(--publication-transition);
@@ -297,7 +346,6 @@ a:focus-visible {
 
 .publication:hover {
   box-shadow: var(--publication-shadow-hover);
-  /* border-color: var(--color-border-hover); REMOVED */
 }
 
 .publication-title {
@@ -338,7 +386,6 @@ a:focus-visible {
 
 .publication-note {
   color: var(--color-text-light);
-  font-style: italic;
   margin-left: var(--spacing-xs);
   font-size: var(--font-size-xs);
   font-style: normal;
@@ -387,8 +434,6 @@ a:focus-visible {
   margin-bottom: var(--spacing-xs);
 }
 
-
-
 .resource-link {
   display: inline-flex;
   align-items: center;
@@ -428,51 +473,13 @@ a:focus-visible {
   margin-left: var(--spacing-xs);
 }
 
-/* Institution components */
-.institution-link {
-  color: var(--color-link);
-  text-decoration: none;
+/* ===== RESEARCH EXPERIENCE (Consolidated) ===== */
+.exp-title-text {
+  color: var(--color-text-light);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
 }
 
-.institution-link:hover {
-  color: var(--color-link-hover);
-  text-decoration: underline;
-}
-
-.award-link {
-  color: var(--color-text-primary);
-  text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-  text-decoration: underline;
-  text-decoration-color: var(--color-note);  /* Pink underline using your --color-note */
-  text-decoration-thickness: var(--text-underline-thickness);
-  text-underline-offset: var(--text-underline-offset);
-}
-
-.award-link:hover {
-  color: var(--color-note);  /* Changes to theme blue on hover */
-  text-decoration: underline;
-  text-decoration-thickness: var(--text-underline-thickness-hover);
-}
-/* Collaborator links */
-.collaborator-link {
-  color: var(--color-text-primary);
-  font-weight: var(--font-weight-medium);
-  text-decoration: underline;
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-thickness: var(--text-underline-thickness);
-  text-underline-offset: var(--text-underline-offset);
-}
-
-.collaborator-link:hover {
-  color: var(--color-primary);
-  text-decoration-thickness: var(--text-underline-thickness-hover);
-}
-
-/* Education and Experience items */
+/* ===== EDUCATION AND EXPERIENCE ITEMS ===== */
 .edu-thesis,
 .edu-supervisors,
 .exp-department,
@@ -526,10 +533,9 @@ a:focus-visible {
 .edu-thesis .thesis-link {
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-light);
-  /* font-style: italic; */
 }
 
-/* Service items */
+/* ===== SERVICE ITEMS ===== */
 .service-item {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-tight);
@@ -566,7 +572,7 @@ a:focus-visible {
   margin-left: 0;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 .footer {
   background-color: var(--color-surface);
   padding: var(--spacing-md) 0;
@@ -606,7 +612,7 @@ a:focus-visible {
   text-decoration: none;
 }
 
-/* Back to top */
+/* ===== BACK TO TOP ===== */
 .back-to-top {
   position: fixed;
   bottom: var(--spacing-md);
@@ -639,7 +645,7 @@ a:focus-visible {
   background-color: var(--color-link-hover);
 }
 
-/* Error message */
+/* ===== ERROR MESSAGE ===== */
 .error-message {
   position: fixed;
   top: var(--spacing-md);
@@ -678,26 +684,17 @@ a:focus-visible {
   }
 }
 
-/* ===== SIMPLIFIED UTILITY CLASSES ===== */
-
-/* Display */
+/* ===== UTILITY CLASSES ===== */
 .hidden { display: none; }
 .block { display: block; }
-
-/* Flexbox - Only essential ones */
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
 .items-center { align-items: center; }
 .justify-between { justify-content: space-between; }
-
-/* Text alignment */
 .text-center { text-align: center; }
-
-/* Simple spacing - Only what's actually used */
 .mb-0 { margin-bottom: 0 !important; }
 .mb-1 { margin-bottom: var(--spacing-sm) !important; }
 .mb-2 { margin-bottom: var(--spacing-md) !important; }
-
 .p-0 { padding: 0 !important; }
 
 /* Responsive utilities */
