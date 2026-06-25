@@ -4,11 +4,13 @@
       "id": "26_SIG_tuttekiri",
       "title": "Uniformly Deployable Kirigami on Arbitrary Planar Graphs",
       "authors": ["Aviv", "Jing", "Olga"],
-      "resources": ["paper"],
+      "resources": ["paper","poster"],
       "image_extensions": [".gif"],
       "links": {
-        "code": "https://github.com/segaviv/tuttekiri",
-        "video": "https://youtu.be/lAtOGjTt69o"
+        "project": "https://igl.ethz.ch/projects/tuttekiri/",
+        "demo": "https://segaviv.github.io/tuttekiri/",
+        "video": "https://youtu.be/lAtOGjTt69o",
+        "code": "https://github.com/segaviv/tuttekiri"
       }
     },
 
