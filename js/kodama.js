@@ -91,7 +91,7 @@ if (trail) {
       </g>
     </svg>`;
     trail.append(el);
-    return { collisionRadius: head.width * (22 / 40) / 2, sitting: false, restTimer: random(8, 24), pose: 0, posture: el.querySelector('.kodama-posture'), seated: el.querySelector('.kodama-seated'), el, head: el.querySelector('.kodama-head'), limbs: el.querySelectorAll('.kodama-limb'), torso: el.querySelector('.kodama-torso'), armSwing: random(.7, 1.3), x: width * (.12 + i * .18), direction: i % 2 ? -1 : 1, speed: random(2, 7), cadence: random(3, 6), bob: random(.6, 1.8), stride: random(6, 14), scale: random(.65, 1), phase: random(0, 6), time: random(0, 10), tilt: random(-9, 9) };
+    return { collisionRadius: head.width * (22 / 40) / 2, sitting: false, restTimer: random(4, 40), companionNear: false, pose: 0, posture: el.querySelector('.kodama-posture'), seated: el.querySelector('.kodama-seated'), el, head: el.querySelector('.kodama-head'), limbs: el.querySelectorAll('.kodama-limb'), torso: el.querySelector('.kodama-torso'), armSwing: random(.7, 1.3), x: width * (.12 + i * .18), direction: i % 2 ? -1 : 1, speed: random(2, 7), cadence: random(3, 6), bob: random(.6, 1.8), stride: random(6, 14), scale: random(.65, 1), phase: random(0, 6), time: random(0, 10), tilt: random(-9, 9) };
   });
   function draw(dt) {
     // Hidden mobile spirits do not take part in encounters.
@@ -103,14 +103,19 @@ if (trail) {
       const companion = active.some(other => other !== s &&
         Math.abs(other.x - s.x) < 9 * (s.scale + other.scale) + 20);
       if (dt > 0 && !reduced.matches) {
-        s.restTimer -= dt;
         if (companion) {
+          // Give each encounter its own delay rather than resetting everyone
+          // to the same eight-second countdown on every nearby frame.
+          if (s.sitting || !s.companionNear) s.restTimer = random(10, 40);
           s.sitting = false;
-          s.restTimer = Math.max(s.restTimer, 8);
-        } else if (s.restTimer <= 0) {
-          s.sitting = !s.sitting;
-          s.restTimer = s.sitting ? random(6, 14) : random(18, 40);
+        } else {
+          s.restTimer -= dt;
+          if (s.restTimer <= 0) {
+            s.sitting = !s.sitting;
+            s.restTimer = s.sitting ? random(4, 12) : random(12, 45);
+          }
         }
+        s.companionNear = companion;
         // Ease gently between poses, using the same clock as walking.
         s.pose += ((s.sitting ? 1 : 0) - s.pose) * Math.min(1, dt * 6);
       }
