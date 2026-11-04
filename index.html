@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/kodama.css">
     
     <!-- Theme color -->
     <meta name="theme-color" content="#2880e3">
@@ -52,6 +53,9 @@
                         </li>
                         <li role="none">
                             <a href="#publications" class="nav-link" role="menuitem">Publications</a>
+                        </li>
+                        <li role="none">
+                            <a href="#teaching" class="nav-link" role="menuitem">Teaching</a>
                         </li>
                         <li role="none">
                             <a href="#services" class="nav-link" role="menuitem">Academic Services</a>
@@ -145,6 +149,14 @@
 
 
 
+        <!-- Teaching Section -->
+        <section id="teaching" class="section" aria-labelledby="teaching-heading">
+            <h2 class="section-title" id="teaching-heading">Teaching</h2>
+            <div class="publications-container" id="teachingContainer">
+                <div class="loading">Loading teaching...</div>
+            </div>
+        </section>
+
         <!-- Academic Services Section -->
         <section id="services" class="section" aria-labelledby="services-heading">
             <h2 class="section-title" id="services-heading">Academic Services</h2>
@@ -181,6 +193,7 @@
                 <div class="footer-copyright">
                     &copy; <span id="currentYear"></span> Jing Ren
                 </div>
+                <div class="kodama-trail" aria-hidden="true"></div>
                 <div class="footer-links">
                     <div class="social-links" aria-label="Social media links">
                         <a href="https://scholar.google.com/citations?user=rA4B6KgAAAAJ&hl=en&authuser=2" 
@@ -217,10 +230,11 @@
                         </a>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
     </footer>
+
+    <script type="module" src="js/kodama.js"></script>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">

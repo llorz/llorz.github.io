@@ -4,6 +4,7 @@
 
 export const DATA_PATHS = {
   publications: './_data/publications.json',
+  teaching: './_data/teaching.json',
   collaborators: './_data/collaborators.json',
   venues: './_data/venues.json',
   services: './_data/services.json',

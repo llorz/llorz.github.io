@@ -7,6 +7,7 @@ import { RESOURCE_ICONS, RESOURCE_NAMES } from './config.js';
 export class Renderer {
   constructor(data) {
     this.publications = data.publications || [];
+    this.teaching = data.teaching || [];
     this.collaborators = data.collaborators || {};
     this.venues = data.venues || {};
     this.services = data.services || { committees: [], reviewer: [] };
@@ -245,6 +246,51 @@ export class Renderer {
     });
     
     return html;
+  }
+
+  renderTeaching() {
+    return this.teaching.map(course => {
+      const versions = [...(course.versions || [{ year: course.year, url: course.url }])]
+        .sort((versionA, versionB) => Number(versionB.year) - Number(versionA.year));
+      const yearLinks = versions.map(version => {
+        const year = String(version.year);
+        const courseUrl = version.url || '#';
+
+        return `<a class="resource-link teaching-year-button" href="${courseUrl}" aria-label="${version.label || `Open ${year} course website`}">${year}</a>`;
+      }).join('');
+      const instructor = this.renderTeachingPerson(course.instructor, course.instructor_url);
+      const teachingAssistant = this.renderTeachingPerson(course.ta, course.ta_url);
+
+      return `
+        <article class="publication teaching-course">
+          <div class="publication-content">
+            <h3 class="publication-title">${course.title}</h3>
+            <div class="teaching-instructors">
+              <span><strong>Instructor:</strong> ${instructor}</span>
+              <span><strong>TA:</strong> ${teachingAssistant}</span>
+            </div>
+            <div class="teaching-schedule">
+              <span><strong>When:</strong> (${course.term || 'Term'}) ${course.time || 'To be announced'}</span>
+            </div>
+            <div class="teaching-location"><strong>Where:</strong> ${course.location || 'To be announced'}</div>
+            <div class="teaching-year-actions">
+              ${yearLinks}
+            </div>
+          </div>
+          <div class="teaching-media">
+            ${course.image
+              ? `<img src="${course.image}" alt="${course.image_alt || `${course.title} course image`}" loading="lazy">`
+              : '<span>Course image to be added</span>'}
+          </div>
+        </article>
+      `;
+    }).join('');
+  }
+
+  renderTeachingPerson(name, url) {
+    const displayName = name || 'To be announced';
+    if (!url || !name) return displayName;
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${displayName}</a>`;
   }
 
   // ===== SERVICES RENDERING =====

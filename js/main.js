@@ -39,6 +39,7 @@ class WebsiteApp {
 
   renderContent() {
     this.renderPublications();
+    this.renderTeaching();
     this.renderEducation();
     this.renderResearchExperience();
     this.renderAcademicServices();
@@ -53,6 +54,15 @@ class WebsiteApp {
     } else {
       container.innerHTML = '<p class="no-data">No publications found.</p>';
     }
+  }
+
+  renderTeaching() {
+    const container = document.getElementById('teachingContainer');
+    if (!container || !this.renderer) return;
+
+    container.innerHTML = this.data.teaching.length > 0
+      ? this.renderer.renderTeaching()
+      : '<p class="no-data">No teaching information available.</p>';
   }
 
   renderAcademicServices() {

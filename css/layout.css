@@ -410,6 +410,65 @@
   max-width: calc(50% - var(--spacing-xs) / 2);
 }
 
+.teaching-instructors,
+.teaching-schedule,
+.teaching-location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs) var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.teaching-course .publication-content {
+  padding-left: var(--spacing-xl);
+}
+
+.teaching-year-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.teaching-year-button {
+  width: fit-content;
+}
+
+.teaching-media {
+  flex: 0 0 180px;
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--border-radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-light);
+  font-size: var(--font-size-xs);
+  text-decoration: none;
+}
+
+.teaching-media img {
+  display: block;
+  width: 100%;
+  height: 112px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .teaching-course {
+    flex-direction: column;
+  }
+
+  .teaching-media {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
 /* ===== FIX FOR WIDE IMAGES ===== */
 /* When there's only one image and it's wide, allow more width */
 .publication-media:has(img:only-child) {

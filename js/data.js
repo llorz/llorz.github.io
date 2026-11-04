@@ -31,8 +31,9 @@ class DataLoader {
 
   async loadAllData() {
     try {
-      const [publications, collaborators, venues, services] = await Promise.all([
+      const [publications, teaching, collaborators, venues, services] = await Promise.all([
         this.fetchJSON(DATA_PATHS.publications),      // Use DATA_PATHS
+        this.fetchJSON(DATA_PATHS.teaching).catch(() => ({ courses: [] })),
         this.fetchJSON(DATA_PATHS.collaborators),
         this.fetchJSON(DATA_PATHS.venues),
         this.fetchJSON(DATA_PATHS.services).catch(() => ({ 
@@ -52,6 +53,7 @@ class DataLoader {
 
       return {
         publications: publications.publications || [],
+        teaching: teaching.courses || [],
         collaborators: collaborators.collaborators || {},
         venues: venues.venues || {},
         services: services,
@@ -61,6 +63,7 @@ class DataLoader {
       console.error('Error loading data files:', error);
       return {
         publications: [],
+        teaching: [],
         collaborators: {},
         venues: {},
         services: { committees: [], reviewer: [] },

@@ -1,0 +1,24 @@
+{
+  "courses": [
+    {
+      "id": "computational_fabrication",
+      "title": "IFT6095A: Geometry Processing for Computational Fabrication",
+      "term": "Winter",
+      "instructor": "Jing Ren",
+      "instructor_email": "jing.ren.2@umontreal.ca",
+      "instructor_url": "https://ren-jing.com/",
+      "ta": "TBA",
+      "time": "Tue/Thu, 3:30–5:30 p.m.",
+      "location": "TBA",
+      "versions": [
+        {
+          "year": 2027,
+          "url": "/#teaching",
+          "label": "2027 course — details coming soon"
+        }
+      ],
+      "image": "/courses/computational_fabrication/26_course_image.jpg",
+      "image_alt": "A looped knitted textile structure produced through computational fabrication"
+    }
+  ]
+}
